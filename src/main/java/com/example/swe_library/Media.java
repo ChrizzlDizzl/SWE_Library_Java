@@ -20,7 +20,7 @@ public class Media {
         if (!publisher.equals("NaN")) {
             csvString.append(",\"").append(publisher).append("\"\n");
         } else {
-            csvString.append("");
+            csvString.append("\n");
         }
 
         return csvString.toString();

@@ -62,11 +62,11 @@ public class PrepareData {
                         }
                         case 2 -> {
                             cuttedLine = cutterInput(line);
-                            ObjectsDB.createMedia(cuttedLine[0], cuttedLine[1], cuttedLine[2], cuttedLine[3], cuttedLine[4]); //personID, personPW, personType
+                            ObjectsDB.createMedia(cuttedLine[0], cuttedLine[1], cuttedLine[2], cuttedLine[3], cuttedLine[4]); //mediaCategory, mediaID, mediaName, date, publisher
                         }
                         case 3 -> {
                             cuttedLine = cutterInput(line);
-                            ObjectsDB.createMedia(cuttedLine[0], cuttedLine[1], cuttedLine[2], cuttedLine[3], "NaN"); //personID, personPW, personType
+                            ObjectsDB.createMedia(cuttedLine[0], cuttedLine[1], cuttedLine[2], cuttedLine[3], "NaN"); //mediaCategory, mediaID, mediaName, date, publisher=NaN
                         }
                         case -1 -> {
                             System.out.println("Error reading input!");

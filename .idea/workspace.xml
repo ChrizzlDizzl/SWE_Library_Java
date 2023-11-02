@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/CreateBackup.java" afterDir="false" />
+    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Fixed bug in LogIn&#10;Change and delete Data added&#10;Backup added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Authentication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.csv" beforeDir="false" afterPath="$PROJECT_DIR$/library.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/CreateBackup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/CreateBackup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/changeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/changeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/PrepareData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/PrepareData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +76,18 @@
       <option name="presentableId" value="Default" />
       <updated>1698849430698</updated>
     </task>
+    <task id="LOCAL-00001" summary="Fixed bug in LogIn&#10;Change and delete Data added&#10;Backup added">
+      <created>1698963298878</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698963298878</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed bug in LogIn&#10;Change and delete Data added&#10;Backup added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug in LogIn&#10;Change and delete Data added&#10;Backup added" />
   </component>
 </project>
