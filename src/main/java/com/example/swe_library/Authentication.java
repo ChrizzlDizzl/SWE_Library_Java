@@ -21,9 +21,14 @@ public class Authentication {
             } else if (Objects.equals(employee.password, pw)) {
                 System.out.println("Hello");
             }
+            else {
+                System.out.println("Log-In failed");
+                logIn();
+            }
         } else if (Objects.equals(customer.password, pw)) {
             System.out.println("Hello");
-        } else {
+        }
+        else {
             System.out.println("Log-In failed");
             logIn();
         }

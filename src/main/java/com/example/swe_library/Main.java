@@ -13,22 +13,22 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        stage.setTitle("LogIn");
         stage.setScene(scene);
         stage.show();
     }
 
     public static void main(String[] args) {
-        launch();
+        //launch();
         //Data to object
         String file = "library.csv";
         PrepareData.dataReader(file);
-        int userID = Authentication.logIn(); //noch als Auswahl, spÃ¤ter nÃ¶tig
+        int userID = Authentication.logIn();
         options(userID);
     }
     public static void options(int userID) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("1 SeeCostumerAccount \n2 ShowInventory \n3 SearchItem \n4 rentOptions \n5 logOut  \n\nMedia Enter your action: ");
+        System.out.print("1 SeeCostumerAccount \n2 ShowInventory \n3 SearchItem \n4 rentOptions \n5 logOut  \n6 ChangeData \n\nMedia Enter your action: ");
         int action = Integer.parseInt(scanner.nextLine());
 
         switch (action) {
@@ -45,9 +45,13 @@ public class Main extends Application {
                 RentOptions.rentOptions(userID);
             }
             case 5 -> {
-                userID= Authentication.logOut();
+                userID = Authentication.logOut();
+            }
+            case 6 -> {
+                ChangeData.changeData();
             }
         }
+        CreateBackup.createBackup();
         options(userID);
     }
 
