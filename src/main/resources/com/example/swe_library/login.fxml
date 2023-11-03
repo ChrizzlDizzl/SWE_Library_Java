@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -16,13 +17,16 @@
             <Image url="@background.png" />
          </image>
       </ImageView>
-      <AnchorPane layoutX="246.0" layoutY="157.0" prefHeight="463.0" prefWidth="795.0" snapToPixel="false" style="-fx-background-color: #FFFFFF;">
+      <AnchorPane layoutX="246.0" layoutY="157.0" opacity="0.97" prefHeight="463.0" prefWidth="795.0" snapToPixel="false" style="-fx-background-color: #FFFFFF;">
          <children>
             <Button layoutX="332.0" layoutY="322.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="136.0" text="Log In">
                <font>
                   <Font size="20.0" />
-               </font></Button>
-            <TextField layoutX="176.0" layoutY="138.0" prefHeight="26.0" prefWidth="447.0" promptText="Kennung">
+               </font>
+               <effect>
+                  <ColorAdjust contrast="0.1" />
+               </effect></Button>
+            <TextField layoutX="177.0" layoutY="153.0" prefHeight="35.0" prefWidth="447.0" promptText="Kennung">
                <font>
                   <Font size="20.0" />
                </font></TextField>

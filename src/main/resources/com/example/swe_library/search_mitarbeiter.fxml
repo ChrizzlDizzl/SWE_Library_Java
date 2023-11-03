@@ -2,6 +2,9 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
@@ -71,6 +74,24 @@
                   <ColorAdjust contrast="0.1" />
                </effect>
             </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="38.0" layoutY="193.0" opacity="0.97" prefHeight="593.0" prefWidth="1205.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <TableView editable="true" layoutX="57.0" layoutY="89.0" prefHeight="462.0" prefWidth="1097.0">
+               <columns>
+                  <TableColumn prefWidth="109.0" text="Medium" />
+                  <TableColumn minWidth="0.0" prefWidth="233.0" text="Name" />
+                  <TableColumn prefWidth="219.0" text="Autor" />
+                  <TableColumn minWidth="0.0" prefWidth="271.0" text="Medium ID" />
+                  <TableColumn prefWidth="263.0" text="Verfügbar ab" />
+               </columns>
+            </TableView>
+            <Label layoutX="57.0" layoutY="39.0" text="Suchtreffer">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>
