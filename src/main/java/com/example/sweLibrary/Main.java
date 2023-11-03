@@ -31,7 +31,7 @@ public class Main extends Application {
     }
     public static void options(int userID) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("1 SeeCostumerAccount \n2 ShowInventory \n3 SearchItem \n4 rentOptions \n5 logOut  \n6 ChangeData \n7 End \n\nMedia Enter your action: ");
+        System.out.print("1 SeeCostumerAccount \n2 ShowInventory \n3 SearchItem \n4 rentOptions \n5 logOut  \n6 ChangeData \n7 newData \n8 End \n\nMedia Enter your action: ");
         int action = Integer.parseInt(scanner.nextLine());
 
         switch (action) {
@@ -54,6 +54,9 @@ public class Main extends Application {
                 EmployeeActions.changeData(userID);
             }
             case 7 -> {
+                EmployeeActions.newData(userID);
+            }
+            case 8 -> {
                 CreateBackup.createBackup();
                 CreateBackup.backupReturnDates();
                 System.exit(0);

@@ -2,6 +2,7 @@ package com.example.sweLibrary;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.format.DateTimeParseException;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -128,9 +129,9 @@ public class EmployeeActions {
         String publishDate = String.valueOf(media.publishDate);
         String publisher = media.publisher;
 
-        System.out.println("Print in the Data you want to change. Press enter to skip a category. Insert * to delete the information of the current Attribute");
+        System.out.println("Print in the Data you want to change. Press enter to skip a category. Insert * to delete the information of the current Attribute (not possible with MediaID)");
         scanner.nextLine();
-        System.out.println("MediaID: ");
+        System.out.println("MediaID (Has to have values!): ");
         id = scanner.nextLine();
         System.out.println("MediaCategory: ");
         mediaCategory = scanner.nextLine();
@@ -141,16 +142,20 @@ public class EmployeeActions {
         System.out.println("Publisher: ");
         publisher = scanner.nextLine();
 
-        if (mediaID.equals("*")) {
-            media.id = null;
-        } else if (!id.equals("")) {
+        if (!id.equals("")) {
             media.id = id;
         }
 
         if (mediaCategory.equals("*")) {
             media.mediaCategory = null;
         } else if (!mediaCategory.equals("")) {
-            media.mediaCategory = MediaCategory.valueOf(mediaCategory);
+            try {
+                media.mediaCategory = MediaCategory.valueOf(mediaCategory);
+            } catch (IllegalArgumentException e) {
+                System.out.println("Illegal input for MediaCategory, try again");
+                System.out.println("MediaCategory (Buch/DVD/Zeitschrift/Landkarte): ");
+                mediaCategory = scanner.nextLine();
+            }
         }
 
         if (name.equals("*")) {
@@ -168,7 +173,61 @@ public class EmployeeActions {
         if (publisher.equals("*")) {
             publisher = null;
         } else if (!publisher.equals("")) {
-            media.publisher = publisher;
+            try {
+                media.publishDate = LocalDate.parse(publishDate);
+            } catch (DateTimeParseException e) {
+                System.out.println("Illegal input for date, try again");
+                System.out.println("PublishDate (yyyy-mm-dd): ");
+                publishDate = scanner.nextLine();
+            }
         }
+    }
+
+    public static void newData(int userID) {
+        if (!ObjectsDB.employeeMap.containsKey(userID)) {
+            System.out.println("Option only allowed as employee, please Log-In as employee!");
+            return;
+        }
+        Scanner scanner = new Scanner(System.in);
+
+        String id;
+        String mediaCategory;
+        String name;
+        String publishDate;
+        String publisher;
+
+        System.out.println("Insert the Media Data. Press enter to skip a category leave it empty\n");
+        System.out.println("MediaID: ");
+        id = scanner.nextLine();
+        System.out.println("MediaCategory (Buch/DVD/Zeitschrift/Landkarte): ");
+        mediaCategory = scanner.nextLine();
+        System.out.println("MediaName: ");
+        name = scanner.nextLine();
+        System.out.println("PublishDate: ");
+        publishDate = scanner.nextLine();
+        System.out.println("Publisher: ");
+        publisher = scanner.nextLine();
+
+
+        Media media = new Media();
+        media.id = id;
+        try {
+            media.mediaCategory = MediaCategory.valueOf(mediaCategory);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Illegal input for MediaCategory, try again");
+            System.out.println("MediaCategory (Buch/DVD/Zeitschrift/Landkarte): ");
+            mediaCategory = scanner.nextLine();
+        }
+        media.name = name;
+        try {
+            media.publishDate = LocalDate.parse(publishDate);
+        } catch (DateTimeParseException e) {
+            System.out.println("Illegal input for date, try again");
+            System.out.println("PublishDate (yyyy-mm-dd): ");
+            publishDate = scanner.nextLine();
+        }
+        media.publisher = publisher;
+
+        ObjectsDB.mediaMap.put(media.id, media);
     }
 }
