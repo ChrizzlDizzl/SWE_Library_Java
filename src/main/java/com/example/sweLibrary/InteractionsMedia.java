@@ -1,4 +1,5 @@
-package com.example.swe_library;
+package com.example.sweLibrary;
+
 import java.util.*;
 
 public class InteractionsMedia {
@@ -7,26 +8,30 @@ public class InteractionsMedia {
         int counter = 0;
         String answer;
         System.out.println("Search: ");
-        String input = scanner.nextLine();
-        input = input.toLowerCase();
+        String input = scanner.nextLine().toLowerCase();
+
         for (Map.Entry<String, Media> entry : ObjectsDB.mediaMap.entrySet()) {
-            Media mediaToCompare = entry.getValue();
-            String compare = mediaToCompare.name;
-            compare = compare.toLowerCase();
-            if (compare.contains(input)) {
-                Media media = ObjectsDB.mediaMap.get(entry.getKey());
-                answer = "Searchresult " + counter + ": ";
-                answer += "\nMediaCategory: " + media.mediaCategory;
-                answer += "\nMediaID: " + media.id;
-                answer += "\nMediaName: " + media.name;
-                answer += "\nPublishDate: " + media.publishDate;
-                answer += "\nPublisher: " + media.publisher;
+            Media media = entry.getValue();
+            answer = "Searchresult " + counter + ": ";
+            answer += "\nMediaCategory: " + media.mediaCategory;
+            answer += "\nMediaID: " + media.id;
+            answer += "\nMediaName: " + media.name;
+            answer += "\nPublishDate: " + media.publishDate;
+            answer += "\nPublisher: " + media.publisher;
+
+            // Check if the user's input exists in any field of the media item
+            if ((media.mediaCategory != null && media.mediaCategory.toString().toLowerCase().contains(input)) ||
+                    media.id.toLowerCase().contains(input) ||
+                    media.name.toLowerCase().contains(input) ||
+                    media.publishDate.toString().toLowerCase().contains(input) ||
+                    media.publisher.toLowerCase().contains(input)) {
                 System.out.println(answer + "\n");
                 counter++;
             }
         }
+
         if (counter == 0) {
-            answer = "Product don't exists in this storage";
+            answer = "Product doesn't exist in this storage";
             System.out.println(answer);
         }
     }

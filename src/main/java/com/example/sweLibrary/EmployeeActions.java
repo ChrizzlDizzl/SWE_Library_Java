@@ -1,0 +1,174 @@
+package com.example.sweLibrary;
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class EmployeeActions {
+
+    public static void rentOptions(int userID) {
+        if (!ObjectsDB.employeeMap.containsKey(userID)) {
+            System.out.println("Option only allowed as employee, please Log-In as employee!");
+            return;
+        }
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("CustomerID: ");
+        int customerID = Integer.parseInt(scanner.nextLine());
+        System.out.print("MediaID: ");
+        String mediaID = scanner.nextLine();
+        String acceptInput = " ";
+
+        System.out.print("What do you want to do? (rent/return/exit): ");
+        acceptInput = scanner.nextLine();
+        if (acceptInput.equals("return")) {
+            returnMedia(userID, customerID, mediaID);
+        } else if (acceptInput.equals("rent")) {
+            rentMedia(userID, customerID, mediaID);
+        } else if (acceptInput.equals("exit")) {
+            Main.options(userID);
+        } else {
+            rentOptions(userID);
+        }
+    }
+
+    public static void returnMedia(int userID, int customerID, String mediaID) {
+        if (!ObjectsDB.customerMap.containsKey(customerID)) {
+            System.out.println("Error, customer doesn't exists!");
+            rentOptions(userID);
+        }
+        if (!ObjectsDB.mediaMap.containsKey(mediaID)) {
+            System.out.println("Error, Media doesn't exists!");
+            rentOptions(userID);
+        }
+
+        if (Customer.rentMap.containsKey(customerID)) {
+            HashMap rentedMedia = Customer.rentMap.get(customerID);
+            if (rentedMedia.containsKey(mediaID)) {
+                rentedMedia = Customer.rentMap.get(customerID);
+
+                LocalDate dateNow = LocalDate.now();
+                LocalDate dateReturn = (LocalDate) rentedMedia.get(mediaID);
+                if (dateNow.isAfter(dateReturn)) {
+                    Period days = dateReturn.until(dateNow);
+                    System.out.println("Return was " + days.getDays() + " days to late");
+                }
+                rentedMedia.remove(mediaID);
+                System.out.println("Return successfully");
+
+                if (rentedMedia.isEmpty()) {
+                    Customer.rentMap.remove(customerID);
+                }
+            } else {
+                System.out.println("Customer didn't rent this media!");
+            }
+        } else {
+            System.out.println("Customer doesn't have rent any books!");
+        }
+    }
+
+    public static void rentMedia(int userID, int customerID, String mediaID) {
+        if (!ObjectsDB.customerMap.containsKey(customerID)) {
+            System.out.println("Error, customer doesn't exists!");
+            rentOptions(userID);
+        }
+        if (!ObjectsDB.mediaMap.containsKey(mediaID)) {
+            System.out.println("Error, Media doesn't exists!");
+            rentOptions(userID);
+        }
+
+        if (Customer.rentMap.containsKey(customerID)) {
+            Customer.rentedMedia = Customer.rentMap.get(customerID);
+            if (!Customer.rentedMedia.containsKey(mediaID)) {
+                Customer.rentedMedia = Customer.rentMap.get(customerID);
+                System.out.println(Customer.rentedMedia);
+            } else {
+                System.out.println("Costumer already has this media!");
+                rentOptions(userID);
+            }
+        }
+
+        LocalDate date = LocalDate.now();
+        date = date.plusDays(14); //return date
+        System.out.println("The date for return is: " + date);
+
+        Customer.rentedMedia.put(mediaID, date);
+        Customer.rentMap.put(customerID, Customer.rentedMedia);
+
+        System.out.println("Rent successfully!");
+    }
+
+    public static void changeData(int userID) {
+        if (!ObjectsDB.employeeMap.containsKey(userID)) {
+            System.out.println("Option only allowed as employee, please Log-In as employee!");
+            return;
+        }
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the MediaID for the Media you want to change: ");
+        String mediaID = scanner.nextLine();
+        if (!ObjectsDB.mediaMap.containsKey(mediaID)) {
+            System.out.println("Media ID doesn't exists");
+            return;
+        }
+
+        System.out.println("Enter \"1\" if you want to delete this media: ");
+        int delete = scanner.nextInt();
+        if (delete == 1) {
+            ObjectsDB.mediaMap.remove(mediaID);
+            return;
+        }
+
+        Media media = ObjectsDB.mediaMap.get(mediaID);
+        String id = media.id;
+        String mediaCategory = String.valueOf(media.mediaCategory);
+        String name = media.name;
+        String publishDate = String.valueOf(media.publishDate);
+        String publisher = media.publisher;
+
+        System.out.println("Print in the Data you want to change. Press enter to skip a category. Insert * to delete the information of the current Attribute");
+        scanner.nextLine();
+        System.out.println("MediaID: ");
+        id = scanner.nextLine();
+        System.out.println("MediaCategory: ");
+        mediaCategory = scanner.nextLine();
+        System.out.println("MediaName: ");
+        name = scanner.nextLine();
+        System.out.println("PublishDate: ");
+        publishDate = scanner.nextLine();
+        System.out.println("Publisher: ");
+        publisher = scanner.nextLine();
+
+        if (mediaID.equals("*")) {
+            media.id = null;
+        } else if (!id.equals("")) {
+            media.id = id;
+        }
+
+        if (mediaCategory.equals("*")) {
+            media.mediaCategory = null;
+        } else if (!mediaCategory.equals("")) {
+            media.mediaCategory = MediaCategory.valueOf(mediaCategory);
+        }
+
+        if (name.equals("*")) {
+            name = null;
+        } else if (!name.equals("")) {
+            media.name = name;
+        }
+
+        if (publishDate.equals("*")) {
+            publishDate = null;
+        } else if (!publishDate.equals("")) {
+            media.publishDate = LocalDate.parse(publishDate);
+        }
+
+        if (publisher.equals("*")) {
+            publisher = null;
+        } else if (!publisher.equals("")) {
+            media.publisher = publisher;
+        }
+    }
+}

@@ -1,9 +1,8 @@
-package com.example.swe_library;
+package com.example.sweLibrary;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-
-import static java.lang.constant.ConstantDescs.NULL;
 
 public class PrepareData {
 
@@ -29,10 +28,9 @@ public class PrepareData {
             }
         }
         if (line.contains("Media")) {
-            if(line.contains("DVD")||line.contains("Landkarte")) {
+            if (line.contains("DVD") || line.contains("Landkarte")) {
                 taskID = 3;
-            }
-            else {
+            } else {
                 taskID = 2;
             }
         }
@@ -73,6 +71,25 @@ public class PrepareData {
                         }
                     }
 
+                }
+            }
+        } catch (
+                IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void returnDateReader(String file) { //reads the data input and safes it as the correct object
+        String line;
+        String[] cuttedLine;
+
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            while ((line = br.readLine()) != null) {
+                if (line.startsWith("Data: ")) {
+                    //skip line
+                } else {
+                    cuttedLine = cutterInput(line);
+                    ObjectsDB.loadRentList(cuttedLine[0], cuttedLine[1], cuttedLine[2]); //customerID, mediaID, returnDate
                 }
             }
         } catch (

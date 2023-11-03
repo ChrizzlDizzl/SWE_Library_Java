@@ -1,22 +1,22 @@
-package com.example.swe_library;
+package com.example.sweLibrary;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.*;
+import java.util.Set;
 
 public class CreateBackup {
-    public static void createBackup () {
-        String csvData="";
-        String csvDataBook="Data: \"Media\",\"Buch\"\n";
-        String csvDataDVD="Data: \"Media\",\"DVD\"\n";
-        String csvDataMap="Data: \"Media\",\"Landkarte\"\n";
-        String csvDataNewspaper="Data: \"Media\",\"Zeitschrift\"\n";
+    public static void createBackup() {
+        String csvData = "";
+        String csvDataBook = "Data: \"Media\",\"Buch\"\n";
+        String csvDataDVD = "Data: \"Media\",\"DVD\"\n";
+        String csvDataMap = "Data: \"Media\",\"Landkarte\"\n";
+        String csvDataNewspaper = "Data: \"Media\",\"Zeitschrift\"\n";
 
         //Backup employee
         String csvDataEmployee = "Data: \"Person\",\"Mitarbeiter\"\n";
-        Set<Integer> personKeys  = ObjectsDB.employeeMap.keySet();
+        Set<Integer> personKeys = ObjectsDB.employeeMap.keySet();
 
         for (int key : personKeys) {
             Employee employee = ObjectsDB.employeeMap.get(key);
@@ -48,15 +48,46 @@ public class CreateBackup {
         }
         csvData = csvDataEmployee + csvDataCustomer + csvDataBook + csvDataDVD + csvDataNewspaper + csvDataMap;
         csvData = csvData.replaceAll("\\n$", "");
-        System.out.println(csvData);
 
         File csvFile = new File("library.csv");
 
         // Write CSV data to the file, overwriting if it already exists
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(csvFile, false)) /* "false" for overwriting */) {
             writer.write(csvData);
-            System.out.println("\nCSV file overwritten at " + csvFile.getAbsolutePath()+ "\n");
         } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void backupReturnDates() {
+        //Backup returnDates
+        String csvReturnDates = "Data: \"PersonID\",\"MediaID\",\"ReturnDate\"\n";
+        Set<Integer> returnKeys = Customer.rentMap.keySet();
+        Set<String> mediaToReturnKeys;
+        StringBuilder csvString = new StringBuilder();
+
+        for (int key : returnKeys) {
+            Customer.rentedMedia = Customer.rentMap.get(key);
+            mediaToReturnKeys = Customer.rentedMedia.keySet();
+            for (String keyReturnMedia : mediaToReturnKeys) {
+                csvString.append("\"");
+                csvString.append(key).append("\",\"");
+                csvString.append(key).append("\",\"");
+                csvString.append(Customer.rentedMedia.get(keyReturnMedia)).append("\"\n");
+            }
+            csvReturnDates = csvString.toString();
+        }
+
+        csvReturnDates = csvReturnDates.replaceAll("\\n$", "");
+
+        File csvFile = new File("returnDates.csv");
+
+        // Write CSV data to the file, overwriting if it already exists
+        try (
+                BufferedWriter writer = new BufferedWriter(new FileWriter(csvFile, false)) /* "false" for overwriting */) {
+            writer.write(csvReturnDates);
+        } catch (
+                IOException e) {
             e.printStackTrace();
         }
     }

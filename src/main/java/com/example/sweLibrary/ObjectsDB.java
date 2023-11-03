@@ -1,4 +1,4 @@
-package com.example.swe_library;
+package com.example.sweLibrary;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
@@ -44,5 +44,15 @@ public class ObjectsDB {
         media.publishDate = LocalDate.parse(publishDate, formatter);
         media.publisher = publisher;
         mediaMap.put(mediaID, media);
+    }
+
+    public static void loadRentList (String customerID, String mediaID, String returnDate) {
+        if (!ObjectsDB.customerMap.containsKey(Integer.valueOf(customerID))) {
+            System.out.println("Error, customer doesn't exists!");
+        }
+        else {
+            Customer.rentedMedia.put(mediaID, LocalDate.parse(returnDate));
+            Customer.rentMap.put(Integer.valueOf(customerID), Customer.rentedMedia);
+        }
     }
 }

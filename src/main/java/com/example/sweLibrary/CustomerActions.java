@@ -1,11 +1,10 @@
-package com.example.swe_library;
+package com.example.sweLibrary;
 import java.time.LocalDate;
 import java.util.HashMap;
-import java.util.Map;
 
 
-public class CostumerAccount {
-    public static void seeCostumerAccount(int userID) {
+public class CustomerActions {
+    public static void customerAccount(int userID) {
         int counter = 0;
         String answer;
 

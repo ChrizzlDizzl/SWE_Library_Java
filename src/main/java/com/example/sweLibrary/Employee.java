@@ -1,3 +1,3 @@
-package com.example.swe_library;
+package com.example.sweLibrary;
 public class Employee extends Person {
 }

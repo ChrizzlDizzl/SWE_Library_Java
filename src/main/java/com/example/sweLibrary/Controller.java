@@ -1,4 +1,4 @@
-package com.example.swe_library;
+package com.example.sweLibrary;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

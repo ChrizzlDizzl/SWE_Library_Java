@@ -1,4 +1,4 @@
-package com.example.swe_library;
+package com.example.sweLibrary;
 public class Person {
     String password;
     PersonType personType;

@@ -3,6 +3,6 @@ module com.example.swe_library {
     requires javafx.fxml;
             
                             
-    opens com.example.swe_library to javafx.fxml;
-    exports com.example.swe_library;
+    opens com.example.sweLibrary to javafx.fxml;
+    exports com.example.sweLibrary;
 }
