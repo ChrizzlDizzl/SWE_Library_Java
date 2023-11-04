@@ -1,4 +1,4 @@
-package com.example.sweLibrary;
+package com.example.swe_library;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;

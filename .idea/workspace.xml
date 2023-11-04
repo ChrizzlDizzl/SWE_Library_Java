@@ -5,15 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Backup RentMedia finished&#10;End Option&#10;Bug fixed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Header_Kunde.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/SceneSwitcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AddMedium_Mitarbeiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Header_Mitarbeiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Leihvorgaenge_Mitarbeiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Mediumansicht_Kunde.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Mediumansicht_Mitarbeiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Mediumlist_Mitarbeiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Search_Kunde.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Search_Mitarbeiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Show_Kunde.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/background.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.csv" beforeDir="false" afterPath="$PROJECT_DIR$/library.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/EmployeeActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/EmployeeActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Authentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/CreateBackup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/CreateBackup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/CustomerActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/CustomerActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/EmployeeActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/EmployeeActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/InteractionsMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/InteractionsMedia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/MediaCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/MediaCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/ObjectsDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/ObjectsDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/PersonType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/PersonType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/PrepareData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/PrepareData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/header_kunde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/header_kunde.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/header_mitarbeiter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/header_mitarbeiter.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,23 +68,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/chris/OneDrive/Dokumente/DHBW/Theoriesemester 3/SWE1/SWE_library/swe_library2/src/main/resources/com/example/swe_library",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\OneDrive\Dokumente\DHBW\Theoriesemester 3\SWE1\SWE_library\swe_library2\src\main\resources\com\example\swe_library" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lucah\OneDrive - Duale Hochschule Baden-Württemberg Stuttgart\Sem3\SWE\SWELibrary" />
       <recent name="C:\Users\chris\OneDrive\Dokumente\DHBW\Theoriesemester 3\SWE1\SWE_library\swe_library\src\main\java\com\example\swe_library" />
       <recent name="C:\Users\chris\OneDrive\Dokumente\DHBW\Theoriesemester 3\SWE1\SWE_library\swe_library" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.swe_library" />
     </key>
   </component>
   <component name="RunManager" selected="Application.com.example.sweLibrary.Main">
@@ -65,15 +108,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.example.sweLibrary.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.sweLibrary.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.swe_library.Main" />
       <module name="swe_library" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.sweLibrary.*" />
+          <option name="PATTERN" value="com.example.swe_library.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="swe_library2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="swe_library2" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,6 +178,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed bug in LogIn&#10;Change and delete Data added&#10;Backup added" />

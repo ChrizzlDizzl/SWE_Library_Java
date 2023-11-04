@@ -1,4 +1,4 @@
-package com.example.sweLibrary;
+package com.example.swe_library;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

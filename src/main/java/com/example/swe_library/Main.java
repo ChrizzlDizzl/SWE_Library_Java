@@ -1,4 +1,4 @@
-package com.example.sweLibrary;
+package com.example.swe_library;
 import java.util.Scanner;
 
 import javafx.application.Application;
@@ -19,15 +19,16 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-        //launch();
+
         //Data to object
         String dataFile = "library.csv";
         PrepareData.dataReader(dataFile);
         String fileReturnDates = "returnDates.csv";
         PrepareData.returnDateReader(fileReturnDates);
+        launch();
 
-        int userID = Authentication.logIn();
-        options(userID);
+     //   int userID = Authentication.logIn();
+       // options(userID);
     }
     public static void options(int userID) {
         Scanner scanner = new Scanner(System.in);
