@@ -19,7 +19,7 @@ public class Authentication {
     private PasswordField input_password;
 
     public void authenticate(ActionEvent event) throws IOException {
-        SceneSwitcher.switchScene(event, "header_kunde.fxml");
+        SceneSwitcher.switchScene(event, "headerKunde.fxml");
     }
     public void logIn(ActionEvent event) throws IOException {
         //Sicherheit kann mit Token verbessert werden
@@ -40,7 +40,7 @@ public class Authentication {
                 input_password.clear();
                 input_kennung.clear();
             } else if (Objects.equals(employee.password, pw)) {
-                SceneSwitcher.switchScene(event, "header_kunde.fxml");
+                SceneSwitcher.switchScene(event, "headerKunde.fxml");
             }
             else {
 
@@ -49,7 +49,7 @@ public class Authentication {
             }
         } else if (Objects.equals(customer.password, pw)) {
             System.out.println("passt");
-            SceneSwitcher.switchScene(event, "header_kunde.fxml");
+            SceneSwitcher.switchScene(event, "headerKunde.fxml");
         }
         else {
             input_password.clear();
