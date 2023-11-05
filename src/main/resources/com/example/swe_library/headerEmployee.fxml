@@ -45,7 +45,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="1064.0" layoutY="53.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="109.0" text="Log-Out">
+            <Button layoutX="1064.0" layoutY="53.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="109.0" text="Log-Out" onAction="#logOut">
                <font>
                   <Font size="20.0" />
                </font>

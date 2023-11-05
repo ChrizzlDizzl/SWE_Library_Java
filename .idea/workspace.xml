@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Namesgebung korrigiert">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Fullscreen added&#10;Namenskoventionen angepasst">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Authentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Header_Kunde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/HeaderCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/SceneSwitcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/SceneSwitcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HeaderMitarbeiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HeaderEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerKunde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerCustomer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerMitarbeiter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerEmployee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HeaderEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HeaderEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerCustomer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerEmployee.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +109,7 @@
       <updated>1698849430698</updated>
       <workItem from="1699003317462" duration="1337000" />
       <workItem from="1699005881435" duration="7818000" />
-      <workItem from="1699176408683" duration="2774000" />
+      <workItem from="1699176408683" duration="5177000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug in LogIn&#10;Change and delete Data added&#10;Backup added">
       <created>1698963298878</created>
@@ -141,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699198345675</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fullscreen added&#10;Namenskoventionen angepasst">
+      <option name="closed" value="true" />
+      <created>1699200005892</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699200005892</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +159,7 @@
     <MESSAGE value="Backup Media finished" />
     <MESSAGE value="Backup RentMedia finished&#10;End Option&#10;Bug fixed" />
     <MESSAGE value="Namesgebung korrigiert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Namesgebung korrigiert" />
+    <MESSAGE value="Fullscreen added&#10;Namenskoventionen angepasst" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fullscreen added&#10;Namenskoventionen angepasst" />
   </component>
 </project>

@@ -59,8 +59,8 @@ public class Authentication {
        // return id;
     }
 
-    public static int logOut() {
-    //    int id = logIn();
+    public static int logOut(ActionEvent event) throws IOException {
+        SceneSwitcher.switchScene(event, "login.fxml");
         return 0;
     }
 }

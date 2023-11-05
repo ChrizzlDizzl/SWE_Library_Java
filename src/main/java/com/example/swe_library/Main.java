@@ -50,7 +50,7 @@ public class Main extends Application {
                 EmployeeActions.rentOptions(userID);
             }
             case 5 -> {
-                userID = Authentication.logOut();
+                //userID = Authentication.logOut();
             }
             case 6 -> {
                 EmployeeActions.changeData(userID);
