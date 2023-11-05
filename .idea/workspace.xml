@@ -6,12 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Fullscreen added&#10;Namenskoventionen angepasst">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Authentication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Header_Kunde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/HeaderCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/HeaderCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/HeaderCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/HeaderEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HeaderEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/addMediumMitarbeiter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/addMedia.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerCustomer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerEmployee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/leihvorgaengeMitarbeiter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/rentingOptions.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/mediumansichtKunde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchItemCustomer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/mediumansichtMitarbeiter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/showItemEmployee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/mediumlistMitarbeiter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/itemListEmployee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchKunde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchCustomer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchMitarbeiter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/showSearchResults.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/showKunde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/showCustomer.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,22 +48,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lucah\OneDrive - Duale Hochschule Baden-Württemberg Stuttgart\Sem3\SWE\SWELibrary" />
@@ -110,6 +116,7 @@
       <workItem from="1699003317462" duration="1337000" />
       <workItem from="1699005881435" duration="7818000" />
       <workItem from="1699176408683" duration="5177000" />
+      <workItem from="1699211595337" duration="1996000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug in LogIn&#10;Change and delete Data added&#10;Backup added">
       <created>1698963298878</created>

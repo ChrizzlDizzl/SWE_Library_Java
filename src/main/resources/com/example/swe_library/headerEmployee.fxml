@@ -22,21 +22,21 @@
                <font>
                   <Font size="20.0" />
                </font></TextField>
-            <Button layoutX="319.0" layoutY="53.0" mnemonicParsing="false" text="Suche">
+            <Button layoutX="319.0" layoutY="53.0" mnemonicParsing="false" text="Suche" onAction="#searchItemEmployee">
                <font>
                   <Font size="20.0" />
                </font>
                <effect>
                   <ColorAdjust contrast="0.1" hue="0.06" />
                </effect></Button>
-            <Button layoutX="430.0" layoutY="53.0" mnemonicParsing="false" text="Medienliste">
+            <Button layoutX="430.0" layoutY="53.0" mnemonicParsing="false" text="Medienliste" onAction="#showInventoryEmployee">
                <font>
                   <Font size="20.0" />
                </font>
                <effect>
                   <ColorAdjust contrast="0.1" />
                </effect></Button>
-            <Button layoutX="23.0" layoutY="41.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="82.0" style="-fx-background-color: #FFFFFF;">
+            <Button layoutX="36.0" layoutY="38.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="82.0" style="-fx-background-color: #FFFFFF;" onAction="#homeEmployee">
                <graphic>
                   <ImageView fitHeight="42.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -55,7 +55,7 @@
                <effect>
                   <ColorAdjust contrast="0.1" />
                </effect></Button>
-            <Button layoutX="587.0" layoutY="53.0" mnemonicParsing="false" text="Ausleihen / Zurückgeben">
+            <Button layoutX="587.0" layoutY="53.0" mnemonicParsing="false" text="Ausleihen / Zurückgeben" onAction="#rentingOptions">
                <font>
                   <Font size="20.0" />
                </font>
@@ -63,7 +63,7 @@
                   <ColorAdjust contrast="0.1" />
                </effect>
             </Button>
-            <Button layoutX="860.0" layoutY="53.0" mnemonicParsing="false" text="Hinzufügen">
+            <Button layoutX="860.0" layoutY="53.0" mnemonicParsing="false" text="Hinzufügen" onAction="#addMedia">
                <font>
                   <Font size="20.0" />
                </font>

@@ -21,21 +21,21 @@
                <font>
                   <Font size="20.0" />
                </font></TextField>
-            <Button layoutX="463.0" layoutY="52.0" mnemonicParsing="false" text="Suche">
+            <Button layoutX="463.0" layoutY="52.0" mnemonicParsing="false" text="Suche" onAction="#searchItemCustomer">
                <font>
                   <Font size="20.0" />
                </font>
                <effect>
                   <ColorAdjust contrast="0.1" />
                </effect></Button>
-            <Button layoutX="605.0" layoutY="52.0" mnemonicParsing="false" text="Benutzerkonto anzeigen">
+            <Button layoutX="605.0" layoutY="52.0" mnemonicParsing="false" text="Benutzerkonto anzeigen" onAction="#showInventoryCustomer">
                <font>
                   <Font size="20.0" />
                </font>
                <effect>
                   <ColorAdjust contrast="0.1" />
                </effect></Button>
-            <Button layoutX="36.0" layoutY="38.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="82.0" style="-fx-background-color: #FFFFFF;">
+            <Button layoutX="36.0" layoutY="38.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="82.0" style="-fx-background-color: #FFFFFF;" onAction="#homeCustomer">
                <graphic>
                   <ImageView fitHeight="42.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
                      <image>
