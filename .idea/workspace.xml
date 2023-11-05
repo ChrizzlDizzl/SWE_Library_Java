@@ -4,33 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Backup RentMedia finished&#10;End Option&#10;Bug fixed">
+    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Namesgebung korrigiert">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Authentication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AddMedium_Mitarbeiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AddMediumMitarbeiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Header_Mitarbeiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HeaderMitarbeiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Leihvorgaenge_Mitarbeiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LeihvorgaengeMitarbeiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Mediumansicht_Kunde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MediumansichtKunde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Mediumansicht_Mitarbeiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MediumansichtMitarbeiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Mediumlist_Mitarbeiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MediumlistMitarbeiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Search_Kunde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchKunde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Search_Mitarbeiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchMitarbeiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Show_Kunde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ShowKunde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/addmedium_mitarbeiter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/addMediumMitarbeiter.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/header_kunde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerKunde.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/header_mitarbeiter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerMitarbeiter.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/leihvorgaenge_mitarbeiter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/leihvorgaengeMitarbeiter.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/mediumansicht_kunde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/mediumansichtKunde.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/mediumansicht_mitarbeiter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/mediumansichtMitarbeiter.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/mediumlist_mitarbeiter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/mediumlistMitarbeiter.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/search_kunde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchKunde.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/search_mitarbeiter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchMitarbeiter.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/show_kunde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/showKunde.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/SceneSwitcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/SceneSwitcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HeaderMitarbeiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HeaderEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerKunde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerCustomer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerMitarbeiter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerEmployee.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,19 +43,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lucah\OneDrive - Duale Hochschule Baden-Württemberg Stuttgart\Sem3\SWE\SWELibrary" />
@@ -113,7 +110,7 @@
       <updated>1698849430698</updated>
       <workItem from="1699003317462" duration="1337000" />
       <workItem from="1699005881435" duration="7818000" />
-      <workItem from="1699176408683" duration="1122000" />
+      <workItem from="1699176408683" duration="2774000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug in LogIn&#10;Change and delete Data added&#10;Backup added">
       <created>1698963298878</created>
@@ -136,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699011702242</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Namesgebung korrigiert">
+      <option name="closed" value="true" />
+      <created>1699198345674</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699198345675</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +151,7 @@
     <MESSAGE value="Fixed bug in LogIn&#10;Change and delete Data added&#10;Backup added" />
     <MESSAGE value="Backup Media finished" />
     <MESSAGE value="Backup RentMedia finished&#10;End Option&#10;Bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Backup RentMedia finished&#10;End Option&#10;Bug fixed" />
+    <MESSAGE value="Namesgebung korrigiert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Namesgebung korrigiert" />
   </component>
 </project>

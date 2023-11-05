@@ -2,9 +2,11 @@ package com.example.swe_library;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -19,7 +21,7 @@ public class Authentication {
     private PasswordField input_password;
 
     public void authenticate(ActionEvent event) throws IOException {
-        SceneSwitcher.switchScene(event, "headerKunde.fxml");
+        SceneSwitcher.switchScene(event, "headerCustomer.fxml");
     }
     public void logIn(ActionEvent event) throws IOException {
         //Sicherheit kann mit Token verbessert werden
@@ -40,7 +42,7 @@ public class Authentication {
                 input_password.clear();
                 input_kennung.clear();
             } else if (Objects.equals(employee.password, pw)) {
-                SceneSwitcher.switchScene(event, "headerKunde.fxml");
+                SceneSwitcher.switchScene(event, "headerEmployee.fxml");
             }
             else {
 
@@ -48,8 +50,7 @@ public class Authentication {
                 input_kennung.clear();
             }
         } else if (Objects.equals(customer.password, pw)) {
-            System.out.println("passt");
-            SceneSwitcher.switchScene(event, "headerKunde.fxml");
+            SceneSwitcher.switchScene(event, "headerCustomer.fxml");
         }
         else {
             input_password.clear();

@@ -23,5 +23,6 @@ public class SceneSwitcher {
 
         appStage.setScene(homepageScene);
         appStage.show();
+        appStage.setFullScreen(true);
     }
 }
