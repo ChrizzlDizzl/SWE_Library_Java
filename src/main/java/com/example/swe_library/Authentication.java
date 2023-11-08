@@ -11,11 +11,11 @@ import java.util.Objects;
 
 public class Authentication {
     @FXML
-    private Button button_login;
+    public Button button_login;
     @FXML
-    private TextField input_kennung;
+    public TextField input_kennung;
     @FXML
-    private PasswordField input_password;
+    public PasswordField input_password;
 
     public void authenticate(ActionEvent event) throws IOException {
         SceneSwitcher.switchScene(event, "headerCustomer.fxml");

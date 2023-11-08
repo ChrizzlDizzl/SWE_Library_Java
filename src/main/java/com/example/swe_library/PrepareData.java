@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class PrepareData {
 
-    private static String[] cutterInput(String line) {
+    public static String[] cutterInput(String line) {
         String[] cuttedLine;
         int counter = 0;
         cuttedLine = line.split(","); //split based on ";"
@@ -17,7 +17,7 @@ public class PrepareData {
         return cuttedLine;
     }
 
-    private static int identifyInputs(String line) { //identify each character set, giving id as return, method onlyfor better structure
+    public static int identifyInputs(String line) { //identify each character set, giving id as return, method onlyfor better structure
         int taskID = -1;
         if (line.contains("Person")) {
             //create object

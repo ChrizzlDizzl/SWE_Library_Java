@@ -4,21 +4,16 @@ import java.util.*;
 
 public class InteractionsMedia {
     public static void searchItem(String item) {
-        Scanner scanner = new Scanner(System.in);
         int counter = 0;
         String answer;
-        System.out.println("Search: ");
-       // String input = scanner.nextLine().toLowerCase();
-        String input = item;
+        List<Media> searchResults = new ArrayList<>();
 
+        System.out.println("Search: ");
+        String input = item.toLowerCase();
+
+        // Step 1: Collect matching media items in the searchResults list
         for (Map.Entry<String, Media> entry : ObjectsDB.mediaMap.entrySet()) {
             Media media = entry.getValue();
-            answer = "Searchresult " + counter + ": ";
-            answer += "\nMediaCategory: " + media.mediaCategory;
-            answer += "\nMediaID: " + media.id;
-            answer += "\nMediaName: " + media.name;
-            answer += "\nPublishDate: " + media.publishDate;
-            answer += "\nPublisher: " + media.publisher;
 
             // Check if the user's input exists in any field of the media item
             if ((media.mediaCategory != null && media.mediaCategory.toString().toLowerCase().contains(input)) ||
@@ -26,9 +21,35 @@ public class InteractionsMedia {
                     media.name.toLowerCase().contains(input) ||
                     media.publishDate.toString().toLowerCase().contains(input) ||
                     media.publisher.toLowerCase().contains(input)) {
-                System.out.println(answer + "\n");
-                counter++;
+                searchResults.add(media);
             }
+        }
+
+        // Step 2: Sort the search results
+        Collections.sort(searchResults, new Comparator<Media>() {
+            @Override
+            public int compare(Media media1, Media media2) {
+                // First, sort by mediaCategory
+                int categoryComparison = media1.mediaCategory.compareTo(media2.mediaCategory);
+                if (categoryComparison != 0) {
+                    return categoryComparison;
+                }
+
+                // If mediaCategory is the same, sort by name
+                return media1.name.compareTo(media2.name);
+            }
+        });
+
+        // Step 3: Print the sorted results
+        for (Media media : searchResults) {
+            answer = "Searchresult " + counter + ": ";
+            answer += "\nMediaCategory: " + media.mediaCategory;
+            answer += "\nMediaID: " + media.id;
+            answer += "\nMediaName: " + media.name;
+            answer += "\nPublishDate: " + media.publishDate;
+            answer += "\nPublisher: " + media.publisher;
+            System.out.println(answer + "\n");
+            counter++;
         }
 
         if (counter == 0) {
@@ -36,6 +57,7 @@ public class InteractionsMedia {
             System.out.println(answer);
         }
     }
+
 
     public static void showInventory() {
         // Define a custom comparator to sort Media objects first by mediaCategory and then by name

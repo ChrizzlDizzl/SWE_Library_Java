@@ -72,7 +72,7 @@ public class CreateBackup {
             for (String keyReturnMedia : mediaToReturnKeys) {
                 csvString.append("\"");
                 csvString.append(key).append("\",\"");
-                csvString.append(key).append("\",\"");
+                csvString.append(keyReturnMedia).append("\",\"");
                 csvString.append(Customer.rentedMedia.get(keyReturnMedia)).append("\"\n");
             }
             csvReturnDates = csvString.toString();
