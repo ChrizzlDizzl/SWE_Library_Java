@@ -2,15 +2,12 @@ package com.example.swe_library;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Objects;
-import java.util.Scanner;
 
 public class Authentication {
     @FXML
@@ -33,23 +30,21 @@ public class Authentication {
      //   System.out.print("Enter your PW: ");
        // String pw = scanner.nextLine();
         String pw = input_password.getText();
-        System.out.println(id);
-        System.out.println(pw);
         Customer customer = ObjectsDB.customerMap.get(id);
         Employee employee = ObjectsDB.employeeMap.get(id);
+        //Prüfen der Eingaben
         if (customer == null) {
-            if (employee == null) {
+            if (employee == null) { //Wenn keine Kennung erkannt wird
                 input_password.clear();
                 input_kennung.clear();
-            } else if (Objects.equals(employee.password, pw)) {
+            } else if (Objects.equals(employee.password, pw)) { //Wenn Mitarbeiter erkannt wird
                 SceneSwitcher.switchScene(event, "headerEmployee.fxml");
             }
             else {
-
                 input_password.clear();
                 input_kennung.clear();
             }
-        } else if (Objects.equals(customer.password, pw)) {
+        } else if (Objects.equals(customer.password, pw)) { //Wenn Kunde erkannt wird
             SceneSwitcher.switchScene(event, "headerCustomer.fxml");
         }
         else {

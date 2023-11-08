@@ -1,5 +1,6 @@
-package com.example.swe_library;
+package controller;
 
+import com.example.swe_library.SceneSwitcher;
 import javafx.event.ActionEvent;
 
 import java.io.IOException;

@@ -3,12 +3,13 @@ package com.example.swe_library;
 import java.util.*;
 
 public class InteractionsMedia {
-    public static void searchItem() {
+    public static void searchItem(String item) {
         Scanner scanner = new Scanner(System.in);
         int counter = 0;
         String answer;
         System.out.println("Search: ");
-        String input = scanner.nextLine().toLowerCase();
+       // String input = scanner.nextLine().toLowerCase();
+        String input = item;
 
         for (Map.Entry<String, Media> entry : ObjectsDB.mediaMap.entrySet()) {
             Media media = entry.getValue();

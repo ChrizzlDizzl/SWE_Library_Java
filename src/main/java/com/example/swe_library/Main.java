@@ -44,7 +44,7 @@ public class Main extends Application {
                 InteractionsMedia.showInventory();
             }
             case 3 -> {
-                InteractionsMedia.searchItem();
+              //  InteractionsMedia.searchItem();
             }
             case 4 -> {
                 EmployeeActions.rentOptions(userID);
