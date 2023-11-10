@@ -61,13 +61,13 @@ public class Main extends Application {
                 EmployeeActions.newData(userID);
             }
             case 8 -> {
-                CreateBackup.createBackup();
-                CreateBackup.backupReturnDates();
+                CreateBackup.createBackup("library.csv");
+                CreateBackup.backupReturnDates("returnDates.csv");
                 System.exit(0);
             }
         }
-        CreateBackup.createBackup();
-        CreateBackup.backupReturnDates();
+        CreateBackup.createBackup("library.csv");
+        CreateBackup.backupReturnDates("returnDates.csv");
         options(userID);
     }
 

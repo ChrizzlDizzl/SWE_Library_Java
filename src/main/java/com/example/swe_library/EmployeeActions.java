@@ -67,6 +67,7 @@ public class EmployeeActions {
         } else {
             System.out.println("Customer doesn't have rent any books!");
         }
+        CreateBackup.backupReturnDates("returnDates.csv");
     }
 
     public static void rentMedia(int customerID, String mediaID) throws Exception{
@@ -97,7 +98,7 @@ public class EmployeeActions {
         Customer.rentedMedia.put(mediaID, date);
         Customer.rentMap.put(customerID, Customer.rentedMedia);
 
-        CreateBackup.backupReturnDates();
+        CreateBackup.backupReturnDates("returnDates.csv");
 
         System.out.println("Rent successfully!");
     }

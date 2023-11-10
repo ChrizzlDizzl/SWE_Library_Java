@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Added add-function for employee.">
+    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Added rent and return Function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/CustomerActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/CustomerActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/EmployeeActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/EmployeeActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RentingOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RentingOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/rentingOptions.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/rentingOptions.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CustomerActionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CustomerActionsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EmployeeActionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmployeeActionsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699633133052</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added rent and return Function">
+      <created>1699637451380</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699637451380</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +258,7 @@
     <MESSAGE value="Search function finally implemented" />
     <MESSAGE value="Added search function for customer" />
     <MESSAGE value="Added add-function for employee." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added add-function for employee." />
+    <MESSAGE value="Added rent and return Function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added rent and return Function" />
   </component>
 </project>
