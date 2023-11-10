@@ -54,10 +54,13 @@ public class AddMediaEmployee extends HeaderEmployee {
             System.out.println("PublishDate (yyyy-mm-dd)");
             clearField(publishDate);
         }
+        String filePath = "library.csv";
+        String filePathReturn = "returnDates.csv";
 
         //Medium der MediaMap hinzufügen
         ObjectsDB.mediaMap.put(media.id, media);
-        CreateBackup.createBackup();
+        CreateBackup.createBackup(filePath);
+        CreateBackup.backupReturnDates(filePathReturn);
         //Clear bei Erfolg
         clearAll();
     }
