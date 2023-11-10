@@ -32,6 +32,8 @@ public class Main extends Application {
        // options(userID);
     }
     public static void options(int userID) throws Exception {
+        String filePath = "library.csv";
+        String filePathReturn = "returnDates.csv";
         Scanner scanner = new Scanner(System.in);
         System.out.print("1 SeeCostumerAccount \n2 ShowInventory \n3 SearchItem \n4 rentOptions \n5 logOut  \n6 ChangeData \n7 newData \n8 End \n\nMedia Enter your action: ");
         int action = Integer.parseInt(scanner.nextLine());

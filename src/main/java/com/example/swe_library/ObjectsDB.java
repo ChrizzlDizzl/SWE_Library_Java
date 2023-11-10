@@ -43,6 +43,7 @@ public class ObjectsDB {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         media.publishDate = LocalDate.parse(publishDate, formatter);
         media.publisher = publisher;
+        media.availability=true;
         mediaMap.put(mediaID, media);
     }
 
@@ -50,9 +51,15 @@ public class ObjectsDB {
         if (!ObjectsDB.customerMap.containsKey(Integer.valueOf(customerID))) {
             System.out.println("Error, customer doesn't exists!");
         }
+        if(!ObjectsDB.mediaMap.containsKey(mediaID)) {
+            System.out.println("Media doesn't exists!");
+        }
         else {
+            Media media = ObjectsDB.mediaMap.get(mediaID);
             Customer.rentedMedia.put(mediaID, LocalDate.parse(returnDate));
             Customer.rentMap.put(Integer.valueOf(customerID), Customer.rentedMedia);
+            media.availability = false;
+            ObjectsDB.mediaMap.put(mediaID, media);
         }
     }
 }

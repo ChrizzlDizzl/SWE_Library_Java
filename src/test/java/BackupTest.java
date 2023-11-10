@@ -19,7 +19,7 @@ class BackupTest {
         PrepareData.dataReader(dataFile);
 
         // Perform the backup
-        CreateBackup.createBackup();
+        CreateBackup.createBackup("src\\test\\resources\\testLibrary.csv");
 
         // Verify that the file is created
         assertTrue(Objects.requireNonNull(new java.io.File(dataFile).exists()));
@@ -41,10 +41,10 @@ class BackupTest {
         PrepareData.returnDateReader(fileReturnDates);
 
         // Perform the backup for media data only (not return dates)
-        CreateBackup.createBackup();
+        CreateBackup.createBackup("src\\test\\resources\\testLibrary.csv");
 
         // Perform the backup for return dates
-        CreateBackup.backupReturnDates();
+        CreateBackup.backupReturnDates("src\\test\\resources\\testReturnData.csv");
 
         // Verify that the file is created
         assertTrue(Objects.requireNonNull(new java.io.File(fileReturnDates).exists()));
