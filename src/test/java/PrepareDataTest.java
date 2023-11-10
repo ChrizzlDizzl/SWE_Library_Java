@@ -65,12 +65,11 @@ public class PrepareDataTest {
 
         // Assert - Check if the data has been stored correctly in your program
         int customerID = 2;
-        String mediaID = "B2626Z";
+        String mediaID = "A123X";
         String returnDate = "2023-11-17";
 
         // Check if the data is correctly loaded into your data structures
         assertTrue(Customer.rentMap.containsKey(customerID));
-
         assertTrue(Customer.rentedMedia.containsKey(mediaID));
 
         assertEquals(LocalDate.parse(returnDate), Customer.rentedMedia.get(mediaID));

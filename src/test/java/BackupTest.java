@@ -15,26 +15,29 @@ class BackupTest {
 
     @Test
     void testCreateBackup() {
-        String dataFile = "library.csv";
+        String dataFile = "src\\test\\resources\\testLibrary.csv";
         PrepareData.dataReader(dataFile);
 
         // Perform the backup
         CreateBackup.createBackup();
 
         // Verify that the file is created
-        assertTrue(Objects.requireNonNull(new java.io.File("library.csv").exists()));
+        assertTrue(Objects.requireNonNull(new java.io.File(dataFile).exists()));
 
         // Additional verifications based on the actual content of the file
-        verifyCsvContent("library.csv", "Data: \"Person\",\"Mitarbeiter\"");
-        verifyCsvContent("library.csv", "\"0\",\"12345678\",\"Mitarbeiter\"");
-        verifyCsvContent("library.csv", "\"1\",\"98765432\",\"Mitarbeiter\"");
+        verifyCsvContent(dataFile, "Data: \"Person\",\"Mitarbeiter\"");
+        verifyCsvContent(dataFile, "\"0\",\"12345678\",\"Mitarbeiter\"");
+        verifyCsvContent(dataFile, "Data: \"Person\",\"Kunde\"");
+        verifyCsvContent(dataFile, "\"2\",\"12112003\",\"Kunde\"");
+        verifyCsvContent(dataFile, "Data: \"Media\",\"Buch\"");
+        verifyCsvContent(dataFile, "\"Buch\",\"A123X\",\"Harry Potter und der Stein der Weisen\",\"1997-07-02\",\"Carlsen\"");
     }
 
     @Test
     void testBackupReturnDates() {
-        String dataFile = "library.csv";
+        String dataFile = "src\\test\\resources\\testLibrary.csv";
         PrepareData.dataReader(dataFile);
-        String fileReturnDates = "returnDates.csv";
+        String fileReturnDates = "src\\test\\resources\\testReturnData.csv";
         PrepareData.returnDateReader(fileReturnDates);
 
         // Perform the backup for media data only (not return dates)
@@ -44,10 +47,10 @@ class BackupTest {
         CreateBackup.backupReturnDates();
 
         // Verify that the file is created
-        assertTrue(Objects.requireNonNull(new java.io.File("returnDates.csv").exists()));
+        assertTrue(Objects.requireNonNull(new java.io.File(fileReturnDates).exists()));
 
         // Additional verifications based on the actual content of the file
-        verifyCsvContent("returnDates.csv", "\"2\",\"2\",\"2023-11-17\"");
+        verifyCsvContent(fileReturnDates, "\"2\",\"A123X\",\"2023-11-17\"");
         // Add more verifications as needed
     }
 

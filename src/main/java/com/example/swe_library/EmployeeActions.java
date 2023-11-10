@@ -79,6 +79,10 @@ public class EmployeeActions {
             System.out.println("Error, Media doesn't exists!");
             rentOptions(userID);
         }
+        if (Customer.rentedMedia.containsKey(mediaID)) {
+            System.out.println("Error, Media already rented!");
+            rentOptions(userID);
+        }
 
         if (Customer.rentMap.containsKey(customerID)) {
             Customer.rentedMedia = Customer.rentMap.get(customerID);
@@ -123,14 +127,14 @@ public class EmployeeActions {
         }
 
         Media media = ObjectsDB.mediaMap.get(mediaID);
-        String id = media.id;
-        String mediaCategory = String.valueOf(media.mediaCategory);
-        String name = media.name;
-        String publishDate = String.valueOf(media.publishDate);
-        String publisher = media.publisher;
+        String id;
+        String mediaCategory;
+        String name;
+        String publishDate;
+        String publisher;
 
         System.out.println("Print in the Data you want to change. Press enter to skip a category. Insert * to delete the information of the current Attribute (not possible with MediaID)");
-        scanner.nextLine();
+        scanner.nextLine(); //consume newLineEntry
         System.out.println("MediaID (Has to have values!): ");
         id = scanner.nextLine();
         System.out.println("MediaCategory: ");
