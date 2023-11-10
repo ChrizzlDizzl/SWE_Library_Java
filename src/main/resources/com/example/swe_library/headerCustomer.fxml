@@ -28,7 +28,7 @@
                <effect>
                   <ColorAdjust contrast="0.1" />
                </effect></Button>
-            <Button layoutX="605.0" layoutY="52.0" mnemonicParsing="false" text="Benutzerkonto anzeigen" onAction="#showInventoryCustomer">
+            <Button layoutX="605.0" layoutY="52.0" mnemonicParsing="false" text="Benutzerkonto anzeigen" onAction="#showCustomerAccount">
                <font>
                   <Font size="20.0" />
                </font>

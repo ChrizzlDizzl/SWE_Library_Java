@@ -17,9 +17,8 @@ public class Authentication {
     @FXML
     public PasswordField input_password;
 
-    public void authenticate(ActionEvent event) throws IOException {
-        SceneSwitcher.switchScene(event, "headerCustomer.fxml");
-    }
+    public static int id;
+
     public void logIn(ActionEvent event) throws IOException {
         //Sicherheit kann mit Token verbessert werden
       //  Scanner scanner = new Scanner(System.in);
@@ -38,6 +37,7 @@ public class Authentication {
                 input_password.clear();
                 input_kennung.clear();
             } else if (Objects.equals(employee.password, pw)) { //Wenn Mitarbeiter erkannt wird
+                Authentication.id= id;
                 SceneSwitcher.switchScene(event, "headerEmployee.fxml");
             }
             else {
@@ -45,6 +45,7 @@ public class Authentication {
                 input_kennung.clear();
             }
         } else if (Objects.equals(customer.password, pw)) { //Wenn Kunde erkannt wird
+            Authentication.id= id;
             SceneSwitcher.switchScene(event, "headerCustomer.fxml");
         }
         else {

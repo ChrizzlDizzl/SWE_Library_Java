@@ -18,43 +18,9 @@
             <Image url="@background.png" />
          </image>
       </ImageView>
-      <AnchorPane layoutX="37.0" layoutY="25.0" opacity="0.97" prefHeight="145.0" prefWidth="1205.0" style="-fx-background-color: #FFFFFF;">
-         <children>
-            <TextField fx:id="inputSearch" layoutX="169.0" layoutY="52.0" prefHeight="43.0" prefWidth="293.0">
-               <font>
-                  <Font size="20.0" />
-               </font></TextField>
-            <Button layoutX="463.0" layoutY="52.0" mnemonicParsing="false" onAction="#searchItemCustomer" text="Suche">
-               <font>
-                  <Font size="20.0" />
-               </font>
-               <effect>
-                  <ColorAdjust contrast="0.1" />
-               </effect></Button>
-            <Button layoutX="605.0" layoutY="52.0" mnemonicParsing="false" onAction="#showInventoryCustomer" text="Benutzerkonto anzeigen">
-               <font>
-                  <Font size="20.0" />
-               </font>
-               <effect>
-                  <ColorAdjust contrast="0.1" />
-               </effect></Button>
-            <Button layoutX="36.0" layoutY="38.0" mnemonicParsing="false" onAction="#homeCustomer" prefHeight="68.0" prefWidth="82.0" style="-fx-background-color: #FFFFFF;">
-               <graphic>
-                  <ImageView fitHeight="42.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@home.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="1064.0" layoutY="53.0" mnemonicParsing="false" onAction="#logOut" prefHeight="19.0" prefWidth="109.0" text="Log-Out">
-               <font>
-                  <Font size="20.0" />
-               </font>
-               <effect>
-                  <ColorAdjust contrast="0.1" />
-               </effect></Button>
-         </children>
+      <AnchorPane>
+         <!-- Include the header here -->
+         <fx:include source="headerCustomer.fxml"/>
       </AnchorPane>
       <AnchorPane layoutX="37.0" layoutY="192.0" opacity="0.97" prefHeight="593.0" prefWidth="1205.0" style="-fx-background-color: #FFFFFF;">
          <children>
@@ -64,6 +30,7 @@
                   <TableColumn fx:id="name" minWidth="0.0" prefWidth="233.0" text="Name" />
                   <TableColumn fx:id="publisher" prefWidth="219.0" text="Verlag" />
                   <TableColumn fx:id="id" minWidth="0.0" prefWidth="271.0" text="Medium ID" />
+                  <TableColumn fx:id="availability" minWidth="0.0" prefWidth="271.0" text="Availability" />
                </columns>
             </TableView>
             <Label layoutX="57.0" layoutY="39.0" text="Suchtreffer">

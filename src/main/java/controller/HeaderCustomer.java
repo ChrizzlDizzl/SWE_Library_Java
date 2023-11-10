@@ -1,5 +1,7 @@
 package controller;
 
+import com.example.swe_library.Authentication;
+import com.example.swe_library.CustomerActions;
 import com.example.swe_library.InteractionsMedia;
 import com.example.swe_library.SceneSwitcher;
 import javafx.event.ActionEvent;
@@ -17,12 +19,13 @@ public class HeaderCustomer {
     public void homeCustomer(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchScene(actionEvent, "headerCustomer.fxml");
     }
-    public void showInventoryCustomer(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent, "showItemCustomer.fxml");
-    }
     public void searchItemCustomer(ActionEvent actionEvent) throws IOException {
         String item = inputSearch.getText();
         InteractionsMedia.searchItem(item);
         SceneSwitcher.switchScene(actionEvent, "searchCustomer.fxml");
+    }
+    public void showCustomerAccount(ActionEvent actionEvent) throws Exception {
+        CustomerActions.customerAccount(Authentication.id);
+        SceneSwitcher.switchScene(actionEvent, "customerAccount.fxml");
     }
 }

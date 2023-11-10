@@ -1,8 +1,7 @@
 package controller;
 
-import com.example.swe_library.InteractionsMedia;
+import com.example.swe_library.CustomerActions;
 import com.example.swe_library.Media;
-import javafx.beans.property.ReadOnlyBooleanWrapper;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.collections.FXCollections;
@@ -13,7 +12,7 @@ import javafx.scene.control.TableView;
 
 import java.time.LocalDate;
 
-public class InventoryEmployee extends HeaderEmployee{
+public class CustomerAccount extends HeaderCustomer {
     @FXML
     private TableView<Media> tableView;
     @FXML
@@ -25,26 +24,23 @@ public class InventoryEmployee extends HeaderEmployee{
     @FXML
     private TableColumn<Media, String> id;
     @FXML
-    private TableColumn<Media, String> publishDate;
-    @FXML
-    private TableColumn<Media, String> availability;
+    private TableColumn<Media, String> returnDate;
 
     @FXML
-    private void initialize(){
+    private void initialize() {
         //Spalten mit den jeweiligen Media Attributen markieren
         category.setCellValueFactory(item -> new ReadOnlyObjectWrapper(item.getValue().mediaCategory));
         name.setCellValueFactory(item -> new ReadOnlyStringWrapper(item.getValue().name));
         publisher.setCellValueFactory(item -> new ReadOnlyStringWrapper(item.getValue().publisher));
         id.setCellValueFactory(item -> new ReadOnlyStringWrapper(item.getValue().id));
-        publishDate.setCellValueFactory(item -> {
+        returnDate.setCellValueFactory(item -> {
             LocalDate date = item.getValue().getReturnDate(); // Replace this with your actual method to get the LocalDate
             String formattedDate = (date != null) ? date.toString() : "";
             return new ReadOnlyStringWrapper(formattedDate);
         });
-        availability.setCellValueFactory(item -> new ReadOnlyBooleanWrapper(item.getValue().availability).asString());
 
         //Suchliste der Medien in ObservableList casten und Tabelle befüllen
-        ObservableList<Media> list = FXCollections.observableArrayList(InteractionsMedia.searchList);
+        ObservableList<Media> list = FXCollections.observableArrayList(CustomerActions.accountList);
         tableView.setItems(list);
     }
 }

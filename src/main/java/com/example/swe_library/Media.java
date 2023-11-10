@@ -7,6 +7,7 @@ public class Media {
     public MediaCategory mediaCategory;
     public String name;
     public LocalDate publishDate;
+    public LocalDate returnDate;
     public String publisher;
     public Boolean availability;
 
@@ -24,6 +25,14 @@ public class Media {
         }
 
         return csvString.toString();
+    }
+
+    public LocalDate getReturnDate() {
+        return returnDate;
+    }
+
+    public void setReturnDate(LocalDate returnDate) {
+        this.returnDate = returnDate;
     }
 }
 
