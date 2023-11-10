@@ -60,12 +60,7 @@ public class InteractionsMedia {
             answer += "\nMediaName: " + media.name;
             answer += "\nPublishDate: " + media.publishDate;
             answer += "\nPublisher: " + media.publisher;
-            if(Customer.rentedMedia.containsKey(media.id)) {
-               answer  += "\nPublisher: " + String.valueOf(Customer.rentedMedia.get(media.id));
-            }
-            else {
-                answer += "\nPublisher: " + "available";
-            }
+            answer += "\nPublisher: " + media.availability;
             System.out.println(answer + "\n");
             counter++;
         }

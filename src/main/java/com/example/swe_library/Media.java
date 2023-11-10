@@ -8,7 +8,7 @@ public class Media {
     public String name;
     public LocalDate publishDate;
     public String publisher;
-    public LocalDate returnDate;
+    public Boolean availability;
 
     public String toCsvString() {
         StringBuilder csvString = new StringBuilder();
