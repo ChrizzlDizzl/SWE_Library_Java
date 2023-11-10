@@ -81,17 +81,17 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <TextField layoutX="128.0" layoutY="93.0" prefHeight="44.0" prefWidth="342.0" promptText="Medium ID">
+            <TextField fx:id="mediumID" layoutX="128.0" layoutY="93.0" prefHeight="44.0" prefWidth="342.0" promptText="Medium ID">
                <font>
                   <Font size="20.0" />
                </font>
             </TextField>
-            <TextField layoutX="127.0" layoutY="162.0" prefHeight="44.0" prefWidth="342.0" promptText="Nutzer ID">
+            <TextField fx:id="customerID" layoutX="127.0" layoutY="162.0" prefHeight="44.0" prefWidth="342.0" promptText="Nutzer ID">
                <font>
                   <Font size="20.0" />
                </font>
             </TextField>
-            <Button layoutX="128.0" layoutY="390.0" mnemonicParsing="false" text="Ausleihen">
+            <Button layoutX="128.0" layoutY="390.0" mnemonicParsing="false" text="Ausleihen" onAction="#rentMedia">
                <font>
                   <Font size="20.0" />
                </font>
@@ -99,7 +99,7 @@
                   <ColorAdjust contrast="0.1" hue="0.06" />
                </effect>
             </Button>
-            <Button layoutX="328.0" layoutY="390.0" mnemonicParsing="false" text="Zurückgeben">
+            <Button layoutX="328.0" layoutY="390.0" mnemonicParsing="false" text="Zurückgeben" onAction="#returnMedia">
                <font>
                   <Font size="20.0" />
                </font>

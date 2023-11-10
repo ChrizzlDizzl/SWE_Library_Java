@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class CustomerActionsTest {
 
     @Test
-    public void testCustomerAccount() {
+    public void testCustomerAccount() throws Exception {
         String dataFile = "src\\test\\resources\\testLibrary.csv";
         PrepareData.dataReader(dataFile);
         String fileReturnDates = "src\\test\\resources\\testReturnData.csv";

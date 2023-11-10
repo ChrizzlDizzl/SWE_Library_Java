@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 
 public class CustomerActions {
-    public static void customerAccount(int userID) {
+    public static void customerAccount(int userID) throws Exception {
         int counter = 0;
         String answer;
 

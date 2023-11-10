@@ -31,7 +31,7 @@ public class Main extends Application {
      //   int userID = Authentication.logIn();
        // options(userID);
     }
-    public static void options(int userID) {
+    public static void options(int userID) throws Exception {
         Scanner scanner = new Scanner(System.in);
         System.out.print("1 SeeCostumerAccount \n2 ShowInventory \n3 SearchItem \n4 rentOptions \n5 logOut  \n6 ChangeData \n7 newData \n8 End \n\nMedia Enter your action: ");
         int action = Integer.parseInt(scanner.nextLine());

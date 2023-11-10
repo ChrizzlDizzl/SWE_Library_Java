@@ -1,5 +1,6 @@
 package com.example.swe_library;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeParseException;
@@ -8,7 +9,7 @@ import java.util.Scanner;
 
 public class EmployeeActions {
 
-    public static void rentOptions(int userID) {
+    public static void rentOptions(int userID) throws Exception {
         if (!ObjectsDB.employeeMap.containsKey(userID)) {
             System.out.println("Option only allowed as employee, please Log-In as employee!");
             return;
@@ -25,9 +26,9 @@ public class EmployeeActions {
         System.out.print("What do you want to do? (rent/return/exit): ");
         acceptInput = scanner.nextLine();
         if (acceptInput.equals("return")) {
-            returnMedia(userID, customerID, mediaID);
+            returnMedia(customerID, mediaID);
         } else if (acceptInput.equals("rent")) {
-            rentMedia(userID, customerID, mediaID);
+            rentMedia(customerID, mediaID);
         } else if (acceptInput.equals("exit")) {
             Main.options(userID);
         } else {
@@ -35,14 +36,12 @@ public class EmployeeActions {
         }
     }
 
-    public static void returnMedia(int userID, int customerID, String mediaID) {
+    public static void returnMedia(int customerID, String mediaID) {
         if (!ObjectsDB.customerMap.containsKey(customerID)) {
             System.out.println("Error, customer doesn't exists!");
-            rentOptions(userID);
         }
         if (!ObjectsDB.mediaMap.containsKey(mediaID)) {
             System.out.println("Error, Media doesn't exists!");
-            rentOptions(userID);
         }
 
         if (Customer.rentMap.containsKey(customerID)) {
@@ -70,18 +69,15 @@ public class EmployeeActions {
         }
     }
 
-    public static void rentMedia(int userID, int customerID, String mediaID) {
+    public static void rentMedia(int customerID, String mediaID) throws Exception{
         if (!ObjectsDB.customerMap.containsKey(customerID)) {
-            System.out.println("Error, customer doesn't exists!");
-            rentOptions(userID);
+            throw new java.lang.Exception("Error, customer doesn't exists!");
         }
         if (!ObjectsDB.mediaMap.containsKey(mediaID)) {
-            System.out.println("Error, Media doesn't exists!");
-            rentOptions(userID);
+            throw new java.lang.Exception("Error, Media doesn't exists!");
         }
         if (Customer.rentedMedia.containsKey(mediaID)) {
-            System.out.println("Error, Media already rented!");
-            rentOptions(userID);
+            throw new java.lang.Exception("Error, Media already rented!");
         }
 
         if (Customer.rentMap.containsKey(customerID)) {
@@ -90,8 +86,7 @@ public class EmployeeActions {
                 Customer.rentedMedia = Customer.rentMap.get(customerID);
                 System.out.println(Customer.rentedMedia);
             } else {
-                System.out.println("Costumer already has this media!");
-                rentOptions(userID);
+                throw new java.lang.Exception("Costumer already has this media!");
             }
         }
 
@@ -101,6 +96,8 @@ public class EmployeeActions {
 
         Customer.rentedMedia.put(mediaID, date);
         Customer.rentMap.put(customerID, Customer.rentedMedia);
+
+        CreateBackup.backupReturnDates();
 
         System.out.println("Rent successfully!");
     }
