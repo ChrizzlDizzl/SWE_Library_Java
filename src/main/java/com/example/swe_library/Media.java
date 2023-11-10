@@ -3,12 +3,12 @@ package com.example.swe_library;
 import java.time.LocalDate;
 
 public class Media {
-    String id;
-    MediaCategory mediaCategory;
-    String name;
-    LocalDate publishDate;
-    String publisher;
-    LocalDate returnDate;
+    public String id;
+    public MediaCategory mediaCategory;
+    public String name;
+    public LocalDate publishDate;
+    public String publisher;
+    public LocalDate returnDate;
 
     public String toCsvString() {
         StringBuilder csvString = new StringBuilder();

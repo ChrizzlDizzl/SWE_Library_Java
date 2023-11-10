@@ -1,9 +1,13 @@
 package com.example.swe_library;
 
+import javafx.collections.ObservableList;
+
 import java.time.LocalDate;
 import java.util.*;
 
 public class InteractionsMedia {
+    //Statische Medienliste von letzter Suchanfrage
+    public static List<Media> searchList = new ArrayList<Media>();
     public static void searchItem(String item) {
         int counter = 0;
         String answer;
@@ -48,6 +52,7 @@ public class InteractionsMedia {
         String returnDate;
         // Step 3: Print the sorted results
         for (Media media : searchResults) {
+            searchList.add(media);
             answer = "Searchresult " + counter + ": ";
             answer += "\nMediaCategory: " + media.mediaCategory;
             answer += "\nMediaID: " + media.id;

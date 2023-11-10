@@ -20,11 +20,13 @@ public class HeaderEmployee {
     public void showInventoryEmployee(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchScene(actionEvent, "inventoryEmployee.fxml");
     }
+    @FXML
     public void searchItemEmployee(ActionEvent actionEvent) throws IOException {
         String item = inputSearch.getText();
         //erst eingabe noch für Medium ID und dann entsprechendes Buch anzeigen
-        SceneSwitcher.switchScene(actionEvent, "searchEmployee.fxml");
         InteractionsMedia.searchItem(item);
+        SceneSwitcher.switchScene(actionEvent, "searchEmployee.fxml");
+
     }
     public void addMedia(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchScene(actionEvent, "addMediaEmployee.fxml");
