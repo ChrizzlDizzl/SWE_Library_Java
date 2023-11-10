@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Alles gesaved wieder...">
+    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Search function finally implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/InteractionsMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/InteractionsMedia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HeaderEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HeaderEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchEmployee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HeaderCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HeaderCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerCustomer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchCustomer.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +49,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "C:/Users/lucah/OneDrive - Duale Hochschule Baden-Württemberg Stuttgart/Sem3/SWE/SWELibraryJava/src/main/java/com/example/swe_library",
-    "last_opened_file_path": "C:/Users/chris/OneDrive/Dokumente/DHBW/Theoriesemester 3/SWE1/SWE_library/V1",
+    "last_opened_file_path": "C:/Users/chris/OneDrive/Dokumente/DHBW/Theoriesemester 3/SWE1/SWE_library/V1/src/main/resources/com/example/swe_library",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -204,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699578078377</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Search function finally implemented">
+      <created>1699582859489</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699582859489</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +233,7 @@
     <MESSAGE value="Fullscreen added&#10;Namenskoventionen angepasst" />
     <MESSAGE value="add Authentication Test&#10;add PrepareData Test" />
     <MESSAGE value="Alles gesaved wieder..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Alles gesaved wieder..." />
+    <MESSAGE value="Search function finally implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search function finally implemented" />
   </component>
 </project>
