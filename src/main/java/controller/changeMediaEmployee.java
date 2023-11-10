@@ -6,6 +6,7 @@ import com.example.swe_library.MediaCategory;
 import com.example.swe_library.ObjectsDB;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
@@ -13,7 +14,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 
-public class AddMediaEmployee extends HeaderEmployee {
+public class changeMediaEmployee extends HeaderEmployee {
     @FXML
     private TextField id;
     @FXML
@@ -32,10 +33,13 @@ public class AddMediaEmployee extends HeaderEmployee {
     private TextField bookshelf;
 
     @FXML
-    private void save(ActionEvent actionEvent) throws IOException{
+    private void newMedia(ActionEvent actionEvent) throws Exception {
         //Medium erstellen und Werte eintragen
         Media media = new Media();
         media.id = id.getText();
+        if(ObjectsDB.mediaMap.containsKey(media.id)) {
+            throw new Exception("Error, key already exists!");
+        }
         media.name = title.getText();
         media.publisher = publisher.getText();
         //Medienkategorie prüfen
@@ -64,6 +68,45 @@ public class AddMediaEmployee extends HeaderEmployee {
         //Clear bei Erfolg
         clearAll();
     }
+    @FXML
+    private void save(ActionEvent actionEvent) throws Exception {
+        //Medium erstellen und Werte eintragen
+        Media media = new Media();
+        media.id = id.getText();
+        if (media.id==null) {
+            throw new Exception("Error, key is empty!");
+        }
+        media.name = title.getText();
+        media.publisher = publisher.getText();
+        //Medienkategorie prüfen
+        try {
+            media.mediaCategory = MediaCategory.valueOf(category.getText());
+        } catch (IllegalArgumentException e) {
+            System.out.println("Illegal input for MediaCategory, try again");
+            System.out.println("MediaCategory (Buch/DVD/Zeitschrift/Landkarte)");
+            clearField(category);
+            return;
+        }
+        try {
+            media.publishDate = LocalDate.parse(publishDate.getText());
+        } catch (DateTimeParseException e) {
+            System.out.println("Illegal input for date, try again");
+            System.out.println("PublishDate (yyyy-mm-dd)");
+            clearField(publishDate);
+        }
+        String filePath = "library.csv";
+        String filePathReturn = "returnDates.csv";
+
+        //Medium der MediaMap hinzufügen
+        if(ObjectsDB.mediaMap.containsKey(media.id)) {
+            ObjectsDB.mediaMap.remove(media.id);
+        }
+        ObjectsDB.mediaMap.put(media.id, media);
+        CreateBackup.createBackup(filePath);
+        CreateBackup.backupReturnDates(filePathReturn);
+        //Clear bei Erfolg
+        clearAll();
+    }
     private void clearField(TextField field){
         field.clear();
     }
@@ -78,7 +121,16 @@ public class AddMediaEmployee extends HeaderEmployee {
         bookshelf.clear();
     }
     @FXML
-    private void abort(ActionEvent actionEvent) throws IOException{
-        homeEmployee(actionEvent);
+    private void delete(ActionEvent actionEvent) throws Exception {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        String mediaID = id.getText();
+        if (!ObjectsDB.mediaMap.containsKey(mediaID)) {
+            throw new Exception("Error!");
+        }
+        ObjectsDB.mediaMap.remove(mediaID);
+        alert.setTitle("Succeeded!");
+        alert.setHeaderText("Löschen war erfolgreich!");
+        alert.showAndWait();
+        clearAll();
     }
 }

@@ -1,6 +1,5 @@
 package controller;
 
-import com.example.swe_library.EmployeeActions;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
@@ -15,7 +14,7 @@ public class RentingOptions extends HeaderEmployee{
     private void rentMedia(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         try {
-            EmployeeActions.rentMedia(Integer.parseInt(customerID.getText()), mediumID.getText());
+            com.example.swe_library.RentingOptions.rentMedia(Integer.parseInt(customerID.getText()), mediumID.getText());
         } catch (Exception e) {
             System.out.println("Failed");
             alert.setTitle("Fail!");
@@ -33,7 +32,7 @@ public class RentingOptions extends HeaderEmployee{
     private void returnMedia(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         try {
-            EmployeeActions.returnMedia(Integer.parseInt(customerID.getText()), mediumID.getText());
+            com.example.swe_library.RentingOptions.returnMedia(Integer.parseInt(customerID.getText()), mediumID.getText());
         } catch (Exception e) {
             alert.setTitle("Fail!");
             alert.setHeaderText("Etwas is schief gelaufen!");

@@ -63,7 +63,7 @@
                   <ColorAdjust contrast="0.1" />
                </effect>
             </Button>
-            <Button layoutX="860.0" layoutY="53.0" mnemonicParsing="false" text="Hinzufügen" onAction="#addMedia">
+            <Button layoutX="860.0" layoutY="53.0" mnemonicParsing="false" text="Medium ändern" onAction="#changeMedia">
                <font>
                   <Font size="20.0" />
                </font>

@@ -18,7 +18,7 @@ public class ChangeDataTests {
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
 
-        EmployeeActions.changeData(0);
+        ChangeData.changeData(0);
 
         // Check if the media was removed from ObjectsDB.mediaMap
         assertFalse(ObjectsDB.mediaMap.containsKey("A123X"));
@@ -34,7 +34,7 @@ public class ChangeDataTests {
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
 
-        EmployeeActions.newData(0);
+        ChangeData.newData(0);
 
         assertTrue(ObjectsDB.mediaMap.containsKey("newMediaID"));
     }

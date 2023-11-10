@@ -30,8 +30,8 @@ public class HeaderEmployee {
         SceneSwitcher.switchScene(actionEvent, "searchEmployee.fxml");
 
     }
-    public void addMedia(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent, "addMediaEmployee.fxml");
+    public void changeMedia(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchScene(actionEvent, "changeMediaEmployee.fxml");
 
 
     }

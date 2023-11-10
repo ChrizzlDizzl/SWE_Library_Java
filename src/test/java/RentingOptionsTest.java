@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.HashMap;
 import java.time.LocalDate;
 
-class EmployeeActionsTest {
+class RentingOptionsTest {
 
     @Test
     void returnMediaTest() throws Exception {
@@ -18,7 +18,7 @@ class EmployeeActionsTest {
         rentedMedia.put("A123X", LocalDate.now().minusDays(7)); // Set return date 7 days ago
         Customer.rentMap.put(2, rentedMedia);
 
-        EmployeeActions.returnMedia(2, "A123X");
+        RentingOptions.returnMedia(2, "A123X");
 
         assertFalse(Customer.rentMap.containsKey(2));
 
@@ -32,7 +32,7 @@ class EmployeeActionsTest {
         String fileReturnDates = "src\\test\\resources\\testReturnData.csv";
         PrepareData.returnDateReader(fileReturnDates);
 
-        EmployeeActions.rentMedia(3, "B123X");
+        RentingOptions.rentMedia(3, "B123X");
 
         assertTrue(Customer.rentedMedia.containsKey("B123X"));
         LocalDate expectedReturnDate = LocalDate.now().plusDays(14);
