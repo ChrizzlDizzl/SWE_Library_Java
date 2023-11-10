@@ -124,7 +124,8 @@ public class changeMediaEmployee extends HeaderEmployee {
     private void delete(ActionEvent actionEvent) throws Exception {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         String mediaID = id.getText();
-        if (!ObjectsDB.mediaMap.containsKey(mediaID)) {
+        if (!ObjectsDB.mediaMap.containsKey(mediaID) || mediaID.isEmpty()) {
+            clearAll();
             throw new Exception("Error!");
         }
         ObjectsDB.mediaMap.remove(mediaID);

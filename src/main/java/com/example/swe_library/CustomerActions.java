@@ -14,15 +14,14 @@ public class CustomerActions {
 
         if (!Customer.rentMap.containsKey(userID)) {
             System.out.println("This option is only for customers! \n");
-            return;
+            throw new Exception("Fail!");
         }
 
         HashMap<String, LocalDate> accountInformation = Customer.rentMap.get(userID);
 
         if (accountInformation == null || accountInformation.isEmpty()) {
             System.out.println("Customer has no media rent!");
-            Main.options(userID);
-            return;
+            throw new Exception("Fail!");
         }
 
         for (String key : accountInformation.keySet()) {
