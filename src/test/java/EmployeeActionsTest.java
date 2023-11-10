@@ -8,7 +8,7 @@ import java.time.LocalDate;
 class EmployeeActionsTest {
 
     @Test
-    void returnMediaTest() {
+    void returnMediaTest() throws Exception {
         String dataFile = "src\\test\\resources\\testLibrary.csv";
         PrepareData.dataReader(dataFile);
         String fileReturnDates = "src\\test\\resources\\testReturnData.csv";

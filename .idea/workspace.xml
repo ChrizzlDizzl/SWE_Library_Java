@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Add CustomerAccount">
+    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="pusblishDate added in table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/CustomerActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/CustomerActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/InventoryEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/InventoryEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/inventoryEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/inventoryEmployee.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchCustomer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/returnDates.csv" beforeDir="false" afterPath="$PROJECT_DIR$/returnDates.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/CreateBackup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/CreateBackup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/EmployeeActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/EmployeeActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RentingOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RentingOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EmployeeActionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmployeeActionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testLibrary.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testLibrary.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,19 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.example.sweLibrary.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.sweLibrary.Main" />
-      <module name="swe_library" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.sweLibrary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AuthenticationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="swe_library" />
       <option name="PACKAGE_NAME" value="" />
@@ -113,11 +101,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthenticationTest.testSuccessfulCustomerLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BackupTest.testBackupReturnDates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="swe_library" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AuthenticationTest" />
-      <option name="METHOD_NAME" value="testSuccessfulCustomerLogin" />
+      <option name="MAIN_CLASS_NAME" value="BackupTest" />
+      <option name="METHOD_NAME" value="testBackupReturnDates" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackupTest.testCreateBackup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="swe_library" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BackupTest" />
+      <option name="METHOD_NAME" value="testCreateBackup" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,10 +133,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BackupTest.testBackupReturnDates" />
+        <item itemvalue="JUnit.BackupTest.testCreateBackup" />
         <item itemvalue="JUnit.AuthenticationTest" />
         <item itemvalue="JUnit.PrepareDataTest" />
-        <item itemvalue="JUnit.AuthenticationTest.testSuccessfulCustomerLogin" />
-        <item itemvalue="Application.com.example.sweLibrary.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +153,7 @@
       <workItem from="1699176408683" duration="5177000" />
       <workItem from="1699211595337" duration="1996000" />
       <workItem from="1699559352108" duration="1672000" />
-      <workItem from="1699638283054" duration="5712000" />
+      <workItem from="1699638283054" duration="9917000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug in LogIn&#10;Change and delete Data added&#10;Backup added">
       <created>1698963298878</created>
@@ -245,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699643484455</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="pusblishDate added in table">
+      <option name="closed" value="true" />
+      <created>1699644046510</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699644046510</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +281,8 @@
     <MESSAGE value="Added add-function for employee." />
     <MESSAGE value="Added rent and return Function" />
     <MESSAGE value="Add CustomerAccount" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add CustomerAccount" />
+    <MESSAGE value="pusblishDate added in table" />
+    <option name="LAST_COMMIT_MESSAGE" value="pusblishDate added in table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

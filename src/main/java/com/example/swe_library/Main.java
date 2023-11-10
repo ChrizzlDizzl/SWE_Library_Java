@@ -49,7 +49,7 @@ public class Main extends Application {
               //  InteractionsMedia.searchItem();
             }
             case 4 -> {
-                EmployeeActions.rentOptions(userID);
+                //EmployeeActions.rentOptions(userID);
             }
             case 5 -> {
                 //userID = Authentication.logOut();

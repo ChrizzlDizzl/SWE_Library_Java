@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Set;
 
 public class CreateBackup {
@@ -60,8 +61,8 @@ public class CreateBackup {
     }
 
     public static void backupReturnDates(String filePath) {
+        Customer.rentedMedia = new HashMap<>();
         //Backup returnDates
-        String csvReturnDates = "Data: \"PersonID\",\"MediaID\",\"ReturnDate\"\n";
         Set<Integer> returnKeys = Customer.rentMap.keySet();
         Set<String> mediaToReturnKeys;
         StringBuilder csvString = new StringBuilder();
@@ -75,9 +76,8 @@ public class CreateBackup {
                 csvString.append(keyReturnMedia).append("\",\"");
                 csvString.append(Customer.rentedMedia.get(keyReturnMedia)).append("\"\n");
             }
-            csvReturnDates = csvString.toString();
         }
-
+        String csvReturnDates = csvString.toString();
         csvReturnDates = csvReturnDates.replaceAll("\\n$", "");
 
         File csvFile = new File(filePath);
