@@ -9,6 +9,7 @@ public class InteractionsMedia {
     //Statische Medienliste von letzter Suchanfrage
     public static List<Media> searchList = new ArrayList<Media>();
     public static void searchItem(String item) {
+        searchList.clear();
         int counter = 0;
         String answer;
         List<Media> searchResults = new ArrayList<>();
@@ -77,6 +78,7 @@ public class InteractionsMedia {
 
 
     public static void showInventory() {
+        searchList.clear();
         // Define a custom comparator to sort Media objects first by mediaCategory and then by name
         Comparator<Map.Entry<String, Media>> mediaCategoryNameComparator = new Comparator<Map.Entry<String, Media>>() {
             @Override
@@ -106,6 +108,7 @@ public class InteractionsMedia {
 
         for (Map.Entry<String, Media> entry : entryList) {
             Media media = entry.getValue();
+            searchList.add(media);
             String answer = "Item " + counter + ": ";
             answer += "\nMediaCategory: " + media.mediaCategory;
             answer += "\nMediaID: " + media.id;

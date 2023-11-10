@@ -17,7 +17,9 @@ public class HeaderEmployee {
     public void homeEmployee(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchScene(actionEvent, "headerEmployee.fxml");
     }
+    @FXML
     public void showInventoryEmployee(ActionEvent actionEvent) throws IOException {
+        InteractionsMedia.showInventory();
         SceneSwitcher.switchScene(actionEvent, "inventoryEmployee.fxml");
     }
     @FXML
@@ -30,6 +32,8 @@ public class HeaderEmployee {
     }
     public void addMedia(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchScene(actionEvent, "addMediaEmployee.fxml");
+
+
     }
     public void rentingOptions(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchScene(actionEvent, "rentingOptions.fxml");
