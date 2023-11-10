@@ -29,6 +29,7 @@
                   <TableColumn fx:id="category" prefWidth="109.0" text="Medium" />
                   <TableColumn fx:id="name" minWidth="0.0" prefWidth="233.0" text="Name" />
                   <TableColumn fx:id="publisher" prefWidth="219.0" text="Verlag" />
+                  <TableColumn fx:id="publishDate" minWidth="0.0" prefWidth="271.0" text="Veröffentlichkeitsdatum" />
                   <TableColumn fx:id="id" minWidth="0.0" prefWidth="271.0" text="Medium ID" />
                   <TableColumn fx:id="availability" minWidth="0.0" prefWidth="271.0" text="Availability" />
                </columns>

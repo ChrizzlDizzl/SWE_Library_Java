@@ -8,6 +8,7 @@ import java.util.List;
 public class CustomerActions {
     public static List<Media> accountList = new ArrayList<Media>();
     public static void customerAccount(int userID) throws Exception {
+        accountList.clear();
         int counter = 0;
         String answer;
 

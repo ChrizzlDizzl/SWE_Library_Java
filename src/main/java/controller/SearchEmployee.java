@@ -24,6 +24,7 @@ public class SearchEmployee extends HeaderEmployee {
     private TableColumn<Media, String> publisher;
     @FXML
     private TableColumn<Media, String> id;
+    @FXML
     private TableColumn<Media, String> publishDate;
     @FXML
     private TableColumn<Media, String> availability;
@@ -35,7 +36,7 @@ public class SearchEmployee extends HeaderEmployee {
         publisher.setCellValueFactory(item -> new ReadOnlyStringWrapper(item.getValue().publisher));
         id.setCellValueFactory(item -> new ReadOnlyStringWrapper(item.getValue().id));
         publishDate.setCellValueFactory(item -> {
-            LocalDate date = item.getValue().getReturnDate(); // Replace this with your actual method to get the LocalDate
+            LocalDate date = item.getValue().publishDate; // Replace this with your actual method to get the LocalDate
             String formattedDate = (date != null) ? date.toString() : "";
             return new ReadOnlyStringWrapper(formattedDate);
         });

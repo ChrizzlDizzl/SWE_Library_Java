@@ -4,27 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Added rent and return Function">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/customerAccount.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Add CustomerAccount">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/returnDates.csv" beforeDir="false" afterPath="$PROJECT_DIR$/returnDates.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Authentication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/CustomerActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/CustomerActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HeaderCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HeaderCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/InventoryEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/InventoryEmployee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/addMediaEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/addMediaEmployee.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerCustomer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/inventoryEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/inventoryEmployee.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/rentingOptions.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/rentingOptions.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchCustomer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/searchEmployee.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/showItemCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/showItemCustomer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/showItemEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/showItemEmployee.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +155,7 @@
       <workItem from="1699176408683" duration="5177000" />
       <workItem from="1699211595337" duration="1996000" />
       <workItem from="1699559352108" duration="1672000" />
-      <workItem from="1699638283054" duration="5151000" />
+      <workItem from="1699638283054" duration="5712000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bug in LogIn&#10;Change and delete Data added&#10;Backup added">
       <created>1698963298878</created>
@@ -250,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699637451380</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add CustomerAccount">
+      <option name="closed" value="true" />
+      <created>1699643484455</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699643484455</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +274,8 @@
     <MESSAGE value="Added search function for customer" />
     <MESSAGE value="Added add-function for employee." />
     <MESSAGE value="Added rent and return Function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added rent and return Function" />
+    <MESSAGE value="Add CustomerAccount" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CustomerAccount" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
