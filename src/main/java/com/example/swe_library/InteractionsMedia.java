@@ -60,7 +60,7 @@ public class InteractionsMedia {
             answer += "\nMediaName: " + media.name;
             answer += "\nPublishDate: " + media.publishDate;
             answer += "\nPublisher: " + media.publisher;
-            answer += "\nPublisher: " + media.availability;
+            answer += "\nAvailability: " + media.availability;
             System.out.println(answer + "\n");
             counter++;
         }
@@ -110,6 +110,7 @@ public class InteractionsMedia {
             answer += "\nMediaName: " + media.name;
             answer += "\nPublishDate: " + media.publishDate;
             answer += "\nPublisher: " + media.publisher;
+            answer += "\nAvailability: " + media.availability;
             System.out.println(answer + "\n");
             counter++;
         }
