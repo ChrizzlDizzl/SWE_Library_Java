@@ -12,7 +12,7 @@ public class HeaderEmployee {
     @FXML
     private TextField inputSearch;
     public void logOut(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent, "login.fxml");
+        Authentication.logOut(actionEvent);
     }
     public void homeEmployee(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchScene(actionEvent, "headerEmployee.fxml");

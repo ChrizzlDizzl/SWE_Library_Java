@@ -1,5 +1,3 @@
-package com.example.sweLibrary.noLongerNeeded;
-
 import com.example.sweLibrary.Media;
 import com.example.sweLibrary.MediaCategory;
 import com.example.sweLibrary.ObjectsDB;

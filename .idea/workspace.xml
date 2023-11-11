@@ -5,17 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="repaired rent and return">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/ChangeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/EmployeeActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/RentingOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/swe_library/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AddMediaEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/changeMediaEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/returnDates.csv" beforeDir="false" afterPath="$PROJECT_DIR$/returnDates.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Authentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/noLongerNeeded/ChangeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ChangeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/noLongerNeeded/crappyTests/AuthenticationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/noLongerNeeded/crappyTests/ChangeDataTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ChangeDataTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HeaderCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HeaderCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/HeaderEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HeaderEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RentingOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RentingOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/addMediaEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/changeMediaEmployee.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/swe_library/headerEmployee.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ChangeDataTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ChangeDataTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EmployeeActionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RentingOptionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ShowCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ShowItemCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ShowItemEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/showCustomer.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/showItemCustomer.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/showItemEmployee.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +87,14 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.swe_library.Main" />
-      <module name="swe_library" />
+      <option name="MAIN_CLASS_NAME" value="com.example.sweLibrary.Main" />
+      <module name="sweLibrary" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.swe_library.*" />
@@ -129,6 +139,19 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PrepareDataTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="sweLibrary" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="sweLibrary" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

@@ -1,5 +1,9 @@
-package com.example.sweLibrary;
+package controller;
 
+import com.example.sweLibrary.Customer;
+import com.example.sweLibrary.Employee;
+import com.example.sweLibrary.ObjectsDB;
+import com.example.sweLibrary.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -20,14 +24,7 @@ public class Authentication {
     public static int id;
 
     public void logIn(ActionEvent event) throws IOException {
-        //Sicherheit kann mit Token verbessert werden
-      //  Scanner scanner = new Scanner(System.in);
-
-      //  System.out.print("Enter your ID: ");
-     //   int id = Integer.parseInt(scanner.nextLine());
         int id = Integer.parseInt(inputKennung.getText());
-     //   System.out.print("Enter your PW: ");
-       // String pw = scanner.nextLine();
         String pw = inputPassword.getText();
         Customer customer = ObjectsDB.customerMap.get(id);
         Employee employee = ObjectsDB.employeeMap.get(id);
@@ -52,7 +49,6 @@ public class Authentication {
             inputPassword.clear();
             inputKennung.clear();
         }
-       // return id;
     }
 
     public static int logOut(ActionEvent event) throws IOException {

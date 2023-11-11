@@ -1,6 +1,5 @@
 package controller;
 
-import com.example.sweLibrary.Authentication;
 import com.example.sweLibrary.CustomerAccount;
 import com.example.sweLibrary.InteractionsMedia;
 import com.example.sweLibrary.SceneSwitcher;
@@ -14,7 +13,7 @@ public class HeaderCustomer {
     @FXML
     private TextField inputSearch;
     public void logOut(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent, "login.fxml");
+        Authentication.logOut(actionEvent);
     }
     public void homeCustomer(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchScene(actionEvent, "headerCustomer.fxml");
