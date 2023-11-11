@@ -57,6 +57,7 @@ public class ChangeMediaEmployee extends HeaderEmployee {
             System.out.println("Illegal input for date, try again");
             System.out.println("PublishDate (yyyy-mm-dd)");
             clearField(publishDate);
+            return;
         }
         String filePath = "library.csv";
         String filePathReturn = "returnDates.csv";
@@ -129,11 +130,17 @@ public class ChangeMediaEmployee extends HeaderEmployee {
         String mediaID = id.getText();
         if (!ObjectsDB.mediaMap.containsKey(mediaID) || mediaID.isEmpty()) {
             clearAll();
+            alert.setTitle("Error!");
+            alert.setHeaderText("Medium-ID wurde nicht gefunden oder ist leer");
+            alert.showAndWait();
             throw new Exception("Error!");
         }
         Media media = ObjectsDB.mediaMap.get(mediaID);
         if (!media.availability) { //check media availability
             clearAll();
+            alert.setTitle("Error!");
+            alert.setHeaderText("Medium ist noch ausgeliehen!");
+            alert.showAndWait();
             throw new Exception("Error!");
         }
         ObjectsDB.mediaMap.remove(mediaID); //delete media

@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="repaired rent and return">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Deleted unused stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/returnDates.csv" beforeDir="false" afterPath="$PROJECT_DIR$/returnDates.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Authentication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/noLongerNeeded/ChangeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ChangeData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/noLongerNeeded/crappyTests/AuthenticationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/noLongerNeeded/crappyTests/ChangeDataTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ChangeDataTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HeaderCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HeaderCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HeaderEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HeaderEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ShowCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ShowItemCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ShowItemEmployee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/showCustomer.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/showItemCustomer.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/showItemEmployee.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ChangeMediaEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ChangeMediaEmployee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699648281685</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Deleted unused stuff">
+      <created>1699700866746</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699700866746</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +310,8 @@
     <MESSAGE value="Add CustomerAccount" />
     <MESSAGE value="pusblishDate added in table" />
     <MESSAGE value="repaired rent and return" />
-    <option name="LAST_COMMIT_MESSAGE" value="repaired rent and return" />
+    <MESSAGE value="Deleted unused stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted unused stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
