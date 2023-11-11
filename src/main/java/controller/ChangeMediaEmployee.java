@@ -13,7 +13,7 @@ import javafx.scene.control.TextField;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 
-public class changeMediaEmployee extends HeaderEmployee {
+public class ChangeMediaEmployee extends HeaderEmployee {
     @FXML
     private TextField id;
     @FXML
@@ -33,6 +33,7 @@ public class changeMediaEmployee extends HeaderEmployee {
 
     @FXML
     private void newMedia(ActionEvent actionEvent) throws Exception {
+        //Neues Medium erstellen und Werte eintragen
         //Medium erstellen und Werte eintragen
         Media media = new Media();
         media.id = id.getText();
@@ -69,12 +70,14 @@ public class changeMediaEmployee extends HeaderEmployee {
     }
     @FXML
     private void save(ActionEvent actionEvent) throws Exception {
-        //Medium erstellen und Werte eintragen
+        //Medium überschreiben
         Media media = new Media();
         media.id = id.getText();
+
         if (media.id==null) {
-            throw new Exception("Error, key is empty!");
+            throw new Exception("Error, key is empty!"); //Schlüssel muss existieren, sonst gibt es Fehler in der Datenbank
         }
+
         media.name = title.getText();
         media.publisher = publisher.getText();
         //Medienkategorie prüfen
@@ -92,6 +95,7 @@ public class changeMediaEmployee extends HeaderEmployee {
             System.out.println("Illegal input for date, try again");
             System.out.println("PublishDate (yyyy-mm-dd)");
             clearField(publishDate);
+            return;
         }
         String filePath = "library.csv";
         String filePathReturn = "returnDates.csv";
@@ -120,14 +124,19 @@ public class changeMediaEmployee extends HeaderEmployee {
         bookshelf.clear();
     }
     @FXML
-    private void delete(ActionEvent actionEvent) throws Exception {
+    private void delete(ActionEvent actionEvent) throws Exception { //delete a media
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         String mediaID = id.getText();
         if (!ObjectsDB.mediaMap.containsKey(mediaID) || mediaID.isEmpty()) {
             clearAll();
             throw new Exception("Error!");
         }
-        ObjectsDB.mediaMap.remove(mediaID);
+        Media media = ObjectsDB.mediaMap.get(mediaID);
+        if (!media.availability) { //check media availability
+            clearAll();
+            throw new Exception("Error!");
+        }
+        ObjectsDB.mediaMap.remove(mediaID); //delete media
         alert.setTitle("Succeeded!");
         alert.setHeaderText("Löschen war erfolgreich!");
         alert.showAndWait();
