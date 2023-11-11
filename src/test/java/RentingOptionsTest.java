@@ -1,4 +1,4 @@
-import com.example.swe_library.*;
+import com.example.sweLibrary.*;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,11 +1,11 @@
-package com.example.swe_library;
+package com.example.sweLibrary;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 
-public class CustomerActions {
+public class CustomerAccount {
     public static List<Media> accountList = new ArrayList<Media>();
     public static void customerAccount(int userID) throws Exception {
         accountList.clear();

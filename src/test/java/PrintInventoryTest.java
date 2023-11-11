@@ -1,14 +1,13 @@
-import com.example.swe_library.PrepareData;
+import com.example.sweLibrary.PrepareData;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static com.example.swe_library.InteractionsMedia.searchItem;
-import static com.example.swe_library.InteractionsMedia.showInventory;
+import static com.example.sweLibrary.InteractionsMedia.showInventory;
 import static org.junit.Assert.assertEquals;
 
-public class printInventoryTest {
+public class PrintInventoryTest {
     @Test
     public void testSearchItem() {
         //load data

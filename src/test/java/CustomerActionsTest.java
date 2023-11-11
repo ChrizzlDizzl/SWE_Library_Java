@@ -1,6 +1,6 @@
 import static org.junit.Assert.*;
 
-import com.example.swe_library.*;
+import com.example.sweLibrary.*;
 import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -27,7 +27,7 @@ public class CustomerActionsTest {
         System.setOut(new PrintStream(outContent));
 
         // Call the customerAccount method
-        CustomerActions.customerAccount(2);
+        CustomerAccount.customerAccount(2);
 
         // Restore standard output
         System.setOut(System.out);

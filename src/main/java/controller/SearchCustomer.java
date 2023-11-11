@@ -1,7 +1,7 @@
 package controller;
 
-import com.example.swe_library.InteractionsMedia;
-import com.example.swe_library.Media;
+import com.example.sweLibrary.InteractionsMedia;
+import com.example.sweLibrary.Media;
 import javafx.beans.property.ReadOnlyBooleanWrapper;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.property.ReadOnlyStringWrapper;

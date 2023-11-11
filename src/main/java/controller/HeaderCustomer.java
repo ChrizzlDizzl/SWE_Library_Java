@@ -1,9 +1,9 @@
 package controller;
 
-import com.example.swe_library.Authentication;
-import com.example.swe_library.CustomerActions;
-import com.example.swe_library.InteractionsMedia;
-import com.example.swe_library.SceneSwitcher;
+import com.example.sweLibrary.Authentication;
+import com.example.sweLibrary.CustomerAccount;
+import com.example.sweLibrary.InteractionsMedia;
+import com.example.sweLibrary.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
@@ -25,7 +25,7 @@ public class HeaderCustomer {
         SceneSwitcher.switchScene(actionEvent, "searchCustomer.fxml");
     }
     public void showCustomerAccount(ActionEvent actionEvent) throws Exception {
-        CustomerActions.customerAccount(Authentication.id);
+        CustomerAccount.customerAccount(Authentication.id);
         SceneSwitcher.switchScene(actionEvent, "customerAccount.fxml");
     }
 }

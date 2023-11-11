@@ -1,4 +1,7 @@
-import com.example.swe_library.*;
+package com.example.sweLibrary.noLongerNeeded.crappyTests;
+
+import com.example.sweLibrary.*;
+import com.example.sweLibrary.noLongerNeeded.ChangeData;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
@@ -21,7 +24,7 @@ public class ChangeDataTests {
         ChangeData.changeData(0);
 
         // Check if the media was removed from ObjectsDB.mediaMap
-        assertFalse(ObjectsDB.mediaMap.containsKey("A123X"));
+        Assertions.assertFalse(ObjectsDB.mediaMap.containsKey("A123X"));
     }
     @Test
     public void testNewData_AddNewMedia() {
@@ -36,6 +39,6 @@ public class ChangeDataTests {
 
         ChangeData.newData(0);
 
-        assertTrue(ObjectsDB.mediaMap.containsKey("newMediaID"));
+        Assertions.assertTrue(ObjectsDB.mediaMap.containsKey("newMediaID"));
     }
 }

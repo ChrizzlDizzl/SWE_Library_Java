@@ -1,4 +1,8 @@
-package com.example.swe_library;
+package com.example.sweLibrary.noLongerNeeded;
+
+import com.example.sweLibrary.Media;
+import com.example.sweLibrary.MediaCategory;
+import com.example.sweLibrary.ObjectsDB;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;

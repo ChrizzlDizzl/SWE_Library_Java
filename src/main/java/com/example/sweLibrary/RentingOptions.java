@@ -1,12 +1,10 @@
-package com.example.swe_library;
+package com.example.sweLibrary;
 
 import javafx.scene.control.Alert;
 
 import java.time.LocalDate;
 import java.time.Period;
-import java.time.format.DateTimeParseException;
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class RentingOptions {
 

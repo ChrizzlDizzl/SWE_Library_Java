@@ -1,16 +1,15 @@
 package controller;
 
-import com.example.swe_library.CreateBackup;
-import com.example.swe_library.Media;
-import com.example.swe_library.MediaCategory;
-import com.example.swe_library.ObjectsDB;
+import com.example.sweLibrary.CreateBackup;
+import com.example.sweLibrary.Media;
+import com.example.sweLibrary.MediaCategory;
+import com.example.sweLibrary.ObjectsDB;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 

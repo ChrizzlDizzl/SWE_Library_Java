@@ -1,8 +1,5 @@
-package com.example.swe_library;
+package com.example.sweLibrary;
 
-import javafx.collections.ObservableList;
-
-import java.time.LocalDate;
 import java.util.*;
 
 public class InteractionsMedia {

@@ -1,7 +1,7 @@
 package controller;
 
-import com.example.swe_library.InteractionsMedia;
-import com.example.swe_library.SceneSwitcher;
+import com.example.sweLibrary.InteractionsMedia;
+import com.example.sweLibrary.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;

@@ -1,12 +1,12 @@
-import com.example.swe_library.Customer;
-import com.example.swe_library.ObjectsDB;
-import com.example.swe_library.PersonType;
-import com.example.swe_library.PrepareData;
+import com.example.sweLibrary.Customer;
+import com.example.sweLibrary.ObjectsDB;
+import com.example.sweLibrary.PersonType;
+import com.example.sweLibrary.PrepareData;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
-import static com.example.swe_library.ObjectsDB.customerMap;
+import static com.example.sweLibrary.ObjectsDB.customerMap;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class PrepareDataTest {

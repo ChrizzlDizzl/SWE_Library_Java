@@ -1,5 +1,4 @@
-package com.example.swe_library;
-import java.util.Scanner;
+package com.example.sweLibrary;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

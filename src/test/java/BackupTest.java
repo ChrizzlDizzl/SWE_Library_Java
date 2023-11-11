@@ -1,7 +1,7 @@
 // ... (imports)
 
-import com.example.swe_library.CreateBackup;
-import com.example.swe_library.PrepareData;
+import com.example.sweLibrary.CreateBackup;
+import com.example.sweLibrary.PrepareData;
 import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;

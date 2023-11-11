@@ -1,7 +1,6 @@
 package controller;
 
-import com.example.swe_library.CustomerActions;
-import com.example.swe_library.Media;
+import com.example.sweLibrary.Media;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.collections.FXCollections;
@@ -40,7 +39,7 @@ public class CustomerAccount extends HeaderCustomer {
         });
 
         //Suchliste der Medien in ObservableList casten und Tabelle befüllen
-        ObservableList<Media> list = FXCollections.observableArrayList(CustomerActions.accountList);
+        ObservableList<Media> list = FXCollections.observableArrayList(com.example.sweLibrary.CustomerAccount.accountList);
         tableView.setItems(list);
     }
 }

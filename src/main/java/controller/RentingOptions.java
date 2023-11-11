@@ -14,7 +14,7 @@ public class RentingOptions extends HeaderEmployee{
     private void rentMedia(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         try {
-            com.example.swe_library.RentingOptions.rentMedia(Integer.parseInt(customerID.getText()), mediumID.getText());
+            com.example.sweLibrary.RentingOptions.rentMedia(Integer.parseInt(customerID.getText()), mediumID.getText());
         } catch (Exception e) {
             System.out.println("Failed");
             alert.setTitle("Fail!");
@@ -32,7 +32,7 @@ public class RentingOptions extends HeaderEmployee{
     private void returnMedia(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         try {
-            com.example.swe_library.RentingOptions.returnMedia(Integer.parseInt(customerID.getText()), mediumID.getText());
+            com.example.sweLibrary.RentingOptions.returnMedia(Integer.parseInt(customerID.getText()), mediumID.getText());
         } catch (Exception e) {
             alert.setTitle("Fail!");
             alert.setHeaderText("Etwas is schief gelaufen!");

@@ -1,4 +1,5 @@
-import javafx.event.ActionEvent;
+package com.example.sweLibrary.noLongerNeeded.crappyTests;
+
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
@@ -9,7 +10,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationTest;
-import com.example.swe_library.Authentication;
+import com.example.sweLibrary.Authentication;
 
 public class AuthenticationTest extends ApplicationTest {
 
