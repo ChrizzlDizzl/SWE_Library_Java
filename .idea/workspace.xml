@@ -4,23 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Finalized">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ShowMediaCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/showMediaCustomer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.csv" beforeDir="false" afterPath="$PROJECT_DIR$/library.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/InteractionsMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/InteractionsMedia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/PrepareData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/PrepareData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ChangeMediaEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ChangeMediaEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HeaderCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HeaderCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HeaderEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HeaderEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/InventoryEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/InventoryEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/changeMediaEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/changeMediaEmployee.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/inventoryEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/inventoryEmployee.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/searchCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/searchCustomer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/searchEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sweLibrary/searchEmployee.fxml" afterDir="false" />
+    <list default="true" id="2d826078-6694-45b2-9b50-f18963459338" name="Changes" comment="Implemented Click-Function at Lists">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/CustomerAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sweLibrary/CustomerAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699703690725</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Implemented Click-Function at Lists">
+      <created>1699712141241</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699712141241</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +326,8 @@
     <MESSAGE value="repaired rent and return" />
     <MESSAGE value="Deleted unused stuff" />
     <MESSAGE value="Finalized" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalized" />
+    <MESSAGE value="Implemented Click-Function at Lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Click-Function at Lists" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

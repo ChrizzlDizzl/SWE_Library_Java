@@ -3,25 +3,24 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import javafx.scene.control.Alert;
 
 
 public class CustomerAccount {
     public static List<Media> accountList = new ArrayList<Media>();
     public static void customerAccount(int userID) throws Exception {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
         accountList.clear();
         int counter = 0;
         String answer;
-
-        if (!Customer.rentMap.containsKey(userID)) {
-            System.out.println("This option is only for customers! \n");
-            throw new Exception("Fail!");
-        }
 
         HashMap<String, LocalDate> accountInformation = Customer.rentMap.get(userID);
 
         if (accountInformation == null || accountInformation.isEmpty()) {
             System.out.println("Customer has no media rent!");
-            throw new Exception("Fail!");
+            alert.setTitle("Hinweis");
+            alert.setHeaderText("Sie haben keine ausgeliehenen Medien");
+            alert.showAndWait();
         }
 
         for (String key : accountInformation.keySet()) {
