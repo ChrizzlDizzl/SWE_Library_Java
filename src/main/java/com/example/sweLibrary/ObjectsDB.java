@@ -32,7 +32,7 @@ public class ObjectsDB {
         employeeMap.put(id, employee);
     }
 
-    public static void createMedia(String mediaCategory, String mediaID, String mediaName, String publishDate, String publisher) {
+    public static void createMedia(String mediaCategory, String mediaID, String mediaName, String publishDate, String shelf, String publisher) {
         if (mediaMap.containsValue(mediaID)) {
             return;
         }
@@ -43,6 +43,7 @@ public class ObjectsDB {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         media.publishDate = LocalDate.parse(publishDate, formatter);
         media.publisher = publisher;
+        media.shelf = shelf;
         media.availability=true;
         mediaMap.put(mediaID, media);
     }

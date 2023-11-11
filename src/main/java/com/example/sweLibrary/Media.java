@@ -9,6 +9,7 @@ public class Media {
     public LocalDate publishDate;
     public LocalDate returnDate;
     public String publisher;
+    public String shelf;
     public Boolean availability;
 
     public String toCsvString() {
@@ -18,6 +19,7 @@ public class Media {
         csvString.append(id).append("\",\"");
         csvString.append(name).append("\",\"");
         csvString.append(publishDate).append("\"");
+        csvString.append(shelf).append("\"");
         if (!publisher.equals("NaN")) {
             csvString.append(",\"").append(publisher).append("\"\n");
         } else {
@@ -29,10 +31,6 @@ public class Media {
 
     public LocalDate getReturnDate() {
         return returnDate;
-    }
-
-    public void setReturnDate(LocalDate returnDate) {
-        this.returnDate = returnDate;
     }
 }
 

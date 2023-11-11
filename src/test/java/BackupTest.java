@@ -30,7 +30,7 @@ class BackupTest {
         verifyCsvContent(dataFile, "Data: \"Person\",\"Kunde\"");
         verifyCsvContent(dataFile, "\"2\",\"12112003\",\"Kunde\"");
         verifyCsvContent(dataFile, "Data: \"Media\",\"Buch\"");
-        verifyCsvContent(dataFile, "\"Buch\",\"A123X\",\"Harry Potter und der Stein der Weisen\",\"1997-07-02\",\"Carlsen\"");
+        verifyCsvContent(dataFile, "\"Buch\",\"A123X\",\"Harry Potter und der Stein der Weisen\",\"1997-07-02\",\"L4\",\"Carlsen\"");
     }
 
     @Test
