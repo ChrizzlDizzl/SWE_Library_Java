@@ -31,6 +31,8 @@ public class HeaderEmployee {
 
     }
     public void changeMedia(ActionEvent actionEvent) throws IOException {
+        //Zuletzt gesuchtes Item wird gelöscht und zuständige Maske wird mit leeren Feldern geladen
+        ChangeMediaEmployee.resetMedia();
         SceneSwitcher.switchScene(actionEvent, "changeMediaEmployee.fxml");
 
 

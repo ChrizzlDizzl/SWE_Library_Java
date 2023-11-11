@@ -1,43 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.*?>
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0"
-            prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="controller.SearchEmployee">
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchEmployee">
     <children>
         <!-- Your existing content -->
         <ImageView fitHeight="913.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@background.png"/>
+                <Image url="@background.png" />
             </image>
         </ImageView>
         <AnchorPane>
             <!-- Include the header here -->
-            <fx:include source="headerEmployee.fxml"/>
+            <fx:include source="headerEmployee.fxml" />
         </AnchorPane>
-        <AnchorPane layoutX="38.0" layoutY="193.0" opacity="0.97" prefHeight="593.0" prefWidth="1205.0"
-                    style="-fx-background-color: #FFFFFF;">
+        <AnchorPane layoutX="38.0" layoutY="193.0" onMouseClicked="#clickItem" opacity="0.97" prefHeight="593.0" prefWidth="1205.0" style="-fx-background-color: #FFFFFF;">
             <children>
-                <TableView fx:id="tableView" editable="true" layoutX="57.0" layoutY="89.0" prefHeight="462.0"
-                           prefWidth="1097.0">
+                <TableView fx:id="tableView" editable="true" layoutX="57.0" layoutY="89.0" prefHeight="462.0" prefWidth="1097.0" onMouseClicked="#clickItem">
                     <columns>
-                        <TableColumn fx:id="category" prefWidth="109.0" text="Medium"/>
-                        <TableColumn fx:id="name" minWidth="0.0" prefWidth="233.0" text="Name"/>
-                        <TableColumn fx:id="publisher" prefWidth="219.0" text="Verlag"/>
+                        <TableColumn fx:id="category" prefWidth="109.0" text="Medium" />
+                        <TableColumn fx:id="name" minWidth="0.0" prefWidth="233.0" text="Name" />
+                        <TableColumn fx:id="publisher" prefWidth="219.0" text="Verlag" />
                         <TableColumn fx:id="publishDate" minWidth="0.0" prefWidth="271.0" text="Veröffentlichkeitsdatum" />
-                        <TableColumn fx:id="id" minWidth="0.0" prefWidth="271.0" text="Medium ID"/>
+                        <TableColumn fx:id="id" minWidth="0.0" prefWidth="271.0" text="Medium ID" />
+                        <TableColumn fx:id="bookshelf" minWidth="0.0" prefWidth="271.0" text="Regal" />
                         <TableColumn fx:id="availability" minWidth="0.0" prefWidth="271.0" text="Verfügbarkeit" />
                     </columns>
                 </TableView>
                 <Label layoutX="57.0" layoutY="39.0" text="Suchtreffer">
                     <font>
-                        <Font size="24.0"/>
+                        <Font size="24.0" />
                     </font>
                 </Label>
             </children>

@@ -2,6 +2,7 @@ package controller;
 
 import com.example.sweLibrary.CustomerAccount;
 import com.example.sweLibrary.InteractionsMedia;
+import com.example.sweLibrary.Media;
 import com.example.sweLibrary.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

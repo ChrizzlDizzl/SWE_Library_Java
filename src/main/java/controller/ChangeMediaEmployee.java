@@ -1,9 +1,6 @@
 package controller;
 
-import com.example.sweLibrary.CreateBackup;
-import com.example.sweLibrary.Media;
-import com.example.sweLibrary.MediaCategory;
-import com.example.sweLibrary.ObjectsDB;
+import com.example.sweLibrary.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -27,9 +24,31 @@ public class ChangeMediaEmployee extends HeaderEmployee {
     @FXML
     private TextArea description;
     @FXML
-    private TextField floor;
-    @FXML
     private TextField bookshelf;
+
+    private static Media m;
+
+    @FXML
+    public void initialize(){
+        //Felder werden befüllt, wenn ein Media mitgegeben wird
+        if(m != null){
+            id.setText(m.id);
+            category.setText(""+m.mediaCategory);
+            title.setText(m.name);
+            publishDate.setText(""+m.publishDate);
+            publisher.setText(m.publisher);
+            bookshelf.setText(m.shelf);
+        }
+    }
+
+    public static void setMedia(Media media){
+        m = media;
+    }
+    public static void resetMedia(){
+        m = null;
+    }
+
+
 
     @FXML
     private void newMedia(ActionEvent actionEvent) throws Exception {
@@ -42,6 +61,7 @@ public class ChangeMediaEmployee extends HeaderEmployee {
         }
         media.name = title.getText();
         media.publisher = publisher.getText();
+        media.shelf = bookshelf.getText();
         //Medienkategorie prüfen
         try {
             media.mediaCategory = MediaCategory.valueOf(category.getText());
@@ -81,6 +101,7 @@ public class ChangeMediaEmployee extends HeaderEmployee {
 
         media.name = title.getText();
         media.publisher = publisher.getText();
+        media.shelf = bookshelf.getText();
         //Medienkategorie prüfen
         try {
             media.mediaCategory = MediaCategory.valueOf(category.getText());
@@ -121,7 +142,6 @@ public class ChangeMediaEmployee extends HeaderEmployee {
         publishDate.clear();
         publisher.clear();
         description.clear();
-        floor.clear();
         bookshelf.clear();
     }
     @FXML
