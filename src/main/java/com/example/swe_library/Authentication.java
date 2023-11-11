@@ -11,11 +11,11 @@ import java.util.Objects;
 
 public class Authentication {
     @FXML
-    public Button button_login;
+    public Button buttonLogin;
     @FXML
-    public TextField input_kennung;
+    public TextField inputKennung;
     @FXML
-    public PasswordField input_password;
+    public PasswordField inputPassword;
 
     public static int id;
 
@@ -25,38 +25,39 @@ public class Authentication {
 
       //  System.out.print("Enter your ID: ");
      //   int id = Integer.parseInt(scanner.nextLine());
-        int id = Integer.parseInt(input_kennung.getText());
+        int id = Integer.parseInt(inputKennung.getText());
      //   System.out.print("Enter your PW: ");
        // String pw = scanner.nextLine();
-        String pw = input_password.getText();
+        String pw = inputPassword.getText();
         Customer customer = ObjectsDB.customerMap.get(id);
         Employee employee = ObjectsDB.employeeMap.get(id);
         //Prüfen der Eingaben
         if (customer == null) {
             if (employee == null) { //Wenn keine Kennung erkannt wird
-                input_password.clear();
-                input_kennung.clear();
+                inputPassword.clear();
+                inputKennung.clear();
             } else if (Objects.equals(employee.password, pw)) { //Wenn Mitarbeiter erkannt wird
                 Authentication.id= id;
                 SceneSwitcher.switchScene(event, "headerEmployee.fxml");
             }
             else {
-                input_password.clear();
-                input_kennung.clear();
+                inputPassword.clear();
+                inputKennung.clear();
             }
         } else if (Objects.equals(customer.password, pw)) { //Wenn Kunde erkannt wird
             Authentication.id= id;
             SceneSwitcher.switchScene(event, "headerCustomer.fxml");
         }
         else {
-            input_password.clear();
-            input_kennung.clear();
+            inputPassword.clear();
+            inputKennung.clear();
         }
        // return id;
     }
 
     public static int logOut(ActionEvent event) throws IOException {
         SceneSwitcher.switchScene(event, "login.fxml");
+        id = -1;
         return 0;
     }
 }

@@ -19,18 +19,18 @@
       </ImageView>
       <AnchorPane layoutX="246.0" layoutY="157.0" opacity="0.97" prefHeight="463.0" prefWidth="795.0" snapToPixel="false" style="-fx-background-color: #FFFFFF;">
          <children>
-            <Button fx:id="button_login" layoutX="332.0" layoutY="322.0" mnemonicParsing="false" onAction="#logIn" prefHeight="24.0" prefWidth="136.0" text="Log In">
+            <Button fx:id="buttonLogin" layoutX="332.0" layoutY="322.0" mnemonicParsing="false" onAction="#logIn" prefHeight="24.0" prefWidth="136.0" text="Log In">
                <font>
                   <Font size="20.0" />
                </font>
                <effect>
                   <ColorAdjust contrast="0.1" />
                </effect></Button>
-            <TextField fx:id="input_kennung" layoutX="177.0" layoutY="153.0" prefHeight="35.0" prefWidth="447.0" promptText="Kennung">
+            <TextField fx:id="inputKennung" layoutX="177.0" layoutY="153.0" prefHeight="35.0" prefWidth="447.0" promptText="Kennung">
                <font>
                   <Font size="20.0" />
                </font></TextField>
-            <PasswordField fx:id="input_password" layoutX="176.0" layoutY="205.0" prefHeight="32.0" prefWidth="448.0" promptText="Passwort">
+            <PasswordField fx:id="inputPassword" layoutX="176.0" layoutY="205.0" prefHeight="32.0" prefWidth="448.0" promptText="Passwort">
                <font>
                   <Font size="20.0" />
                </font></PasswordField>
