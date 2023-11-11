@@ -2,6 +2,7 @@ package com.example.sweLibrary.noLongerNeeded.crappyTests;
 
 import com.example.sweLibrary.*;
 import com.example.sweLibrary.noLongerNeeded.ChangeData;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
